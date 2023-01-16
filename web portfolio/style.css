@@ -192,17 +192,3 @@ section {
 .popup .close:hover {
     color: crimson;
 }
-
-@media screen and (max-width: 700px) {
-    .box {
-        width: 70%;
-    }
-
-    .popup {
-        width: 70%;
-    }
-}
-
-.image {
-    z-index: 9999px;
-}
