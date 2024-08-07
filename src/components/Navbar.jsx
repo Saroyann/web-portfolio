@@ -39,11 +39,13 @@ const Navbar = () => {
                 <ToggleButton />
             </div>
             <ul className={menuClasses}>
-                <li className="text-2xl py-3 mt-32"><a href="#home">Home</a></li>
-                <li className="text-2xl py-3"><a href="#about">About</a></li>
+                <div className='mt-32'>
+                <li className="text-2xl py-3"><a href="#home">Home</a></li>
+                <li className="text-2xl py-3"><a href="#about">About Me</a></li>
                 <li className="text-2xl py-3"><a href="#skills">Skills</a></li>
                 <li className="text-2xl py-3"><a href="#portfolio">Portfolio</a></li>
                 <li className="text-2xl py-3"><a href="#Achievements">Certificates</a></li>
+                </div>
             </ul>
         </div>
         </>
