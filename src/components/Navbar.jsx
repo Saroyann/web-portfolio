@@ -43,7 +43,7 @@ const Navbar = () => {
                 <li className="text-2xl py-3"><a href="#about">About</a></li>
                 <li className="text-2xl py-3"><a href="#skills">Skills</a></li>
                 <li className="text-2xl py-3"><a href="#portfolio">Portfolio</a></li>
-                <li className="text-2xl py-3"><a href="#Achievements">Achievements</a></li>
+                <li className="text-2xl py-3"><a href="#Achievements">Certificates</a></li>
             </ul>
         </div>
         </>
