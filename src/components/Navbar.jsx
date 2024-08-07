@@ -28,7 +28,7 @@ const Navbar = () => {
     );
 
     const navClasses = `w-full fixed top-0 left-0 ${isScrolled ? 'backdrop-blur-sm' : ''}`;
-    const menuClasses = `h-full fixed top-0 w-4xl bg-slate-200 p-10 ease-in-out duration-500 ${menu ? 'left-0 text-center' : 'left-[-100vw]'}`;
+    const menuClasses = `h-full fixed top-0 w-4xl bg-slate-200 p-8 ease-in-out duration-500 ${menu ? 'left-0 text-center' : 'left-[-100vw]'}`;
 
     return (
         <>
@@ -39,11 +39,11 @@ const Navbar = () => {
                 <ToggleButton />
             </div>
             <ul className={menuClasses}>
-                <li className="text-2xl py-3"><a href="#home">Home</a></li>
+                <li className="text-2xl py-3 mt-32"><a href="#home">Home</a></li>
                 <li className="text-2xl py-3"><a href="#about">About</a></li>
                 <li className="text-2xl py-3"><a href="#skills">Skills</a></li>
                 <li className="text-2xl py-3"><a href="#portfolio">Portfolio</a></li>
-                <li className="text-2xl py-3"><a href="#skills">Skills</a></li>
+                <li className="text-2xl py-3"><a href="#Achievements">Achievements</a></li>
             </ul>
         </div>
         </>
