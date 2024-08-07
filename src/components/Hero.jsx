@@ -14,27 +14,27 @@ const Hero = () => {
                     className='relative mx-auto flex md:flex-col justify-center items-center'
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, ease: 'easeInOut' }}
+                    transition={{ duration: 2, ease: 'easeInOut' }}
                 >
                     <motion.div
                         className="absolute bg-yellow-200 w-[300px] h-[300px] rounded-full"
                         initial={{ scale: 0 }}
                         animate={{ scale: 1 }}
-                        transition={{ duration: 1, ease: 'easeInOut' }}
+                        transition={{ duration: 2, ease: 'easeInOut' }}
                     ></motion.div>
                     <motion.img
                         className="absolute left-[-100px] w-[190px]"
                         src={izumi1}
                         initial={{ x: -100, opacity: 0 }}
                         animate={{ x: 90, opacity: 1 }}
-                        transition={{ duration: 1, delay: 0.5, ease: 'easeInOut' }}
+                        transition={{ duration: 2, delay: 0.5, ease: 'easeInOut' }}
                     />
                     <motion.img
                         className="absolute right-[-100px] w-[190px]"
                         src={izumi2}
                         initial={{ x: 100, opacity: 0 }}
                         animate={{ x: -90, opacity: 1 }}
-                        transition={{ duration: 1, delay: 0.5, ease: 'easeInOut' }}
+                        transition={{ duration: 2, delay: 0.5, ease: 'easeInOut' }}
                     />
                     <motion.img
                         className="relative w-[290px]"
@@ -42,7 +42,7 @@ const Hero = () => {
                         alt="Profile"
                         initial={{ scale: 0 }}
                         animate={{ scale: 1 }}
-                        transition={{ duration: 1, delay: 1, ease: 'easeInOut' }}
+                        transition={{ duration: 2, delay: 1, ease: 'easeInOut' }}
                     />
                 </motion.div>
                 <div className='text-center w-[280px] mx-auto mt-3'>
