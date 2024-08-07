@@ -28,9 +28,10 @@ const Navbar = () => {
     );
 
     const navClasses = `w-full fixed top-0 left-0 ${isScrolled ? 'backdrop-blur-sm' : ''}`;
-    const menuClasses = `h-full fixed top-0 w-4xl bg-slate-300 p-10 ease-in-out duration-500 ${menu ? 'left-0 text-center' : 'left-[-100vw]'}`;
+    const menuClasses = `h-full fixed top-0 w-4xl bg-slate-200 p-10 ease-in-out duration-500 ${menu ? 'left-0 text-center' : 'left-[-100vw]'}`;
 
     return (
+        <>
         <div className={navClasses}>
             <div className="flex items-center py-2">
                 <h1 className="text-2xl ml-3 mt-2 font-bold text-yellow-500 mr-48">YIIM</h1>
@@ -45,6 +46,7 @@ const Navbar = () => {
                 <li className="text-2xl py-3"><a href="#skills">Skills</a></li>
             </ul>
         </div>
+        </>
     );
 };
 
