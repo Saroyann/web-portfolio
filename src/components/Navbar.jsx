@@ -34,17 +34,17 @@ const Navbar = () => {
         <>
         <div className={navClasses}>
             <div className="flex items-center py-2">
-                <h1 className=" text-2xl ml-3 mt-2 font-bold text-yellow-500 mr-48">YIIM</h1>
+                <h1 className=" text-2xl md:text-4xl ml-3 mt-2 font-bold text-yellow-500 mr-48">YIIM</h1>
                 <MenuIcon isOpen={menu} />
             </div>
             <ul className={menuClasses}>
-                <div className='mt-32'>
+                <div className='mt-32 md:mt-72'>
                 <ToggleButton />
-                <li className="text-2xl py-3"><a href="#home">Home</a></li>
-                <li className="text-2xl py-3"><a href="#about">About Me</a></li>
-                <li className="text-2xl py-3"><a href="#skills">Skills</a></li>
-                <li className="text-2xl py-3"><a href="#portfolio">Portfolio</a></li>
-                <li className="text-2xl py-3"><a href="#Achievements">Certificates</a></li>
+                <li className="text-2xl md:text-4xl py-3 md:py-4"><a href="#home">Home</a></li>
+                <li className="text-2xl md:text-4xl py-3 md:py-4"><a href="#about">About Me</a></li>
+                <li className="text-2xl md:text-4xl py-3 md:py-4"><a href="#skills">Skills</a></li>
+                <li className="text-2xl md:text-4xl py-3 md:py-4"><a href="#portfolio">Portfolio</a></li>
+                <li className="text-2xl md:text-4xl py-3 md:py-4"><a href="#Achievements">Certificates</a></li>
                 </div>
             </ul>
         </div>
