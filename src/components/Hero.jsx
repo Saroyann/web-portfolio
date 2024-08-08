@@ -3,6 +3,7 @@ import hero from '../assets/profile.png';
 import izumi1 from '../assets/konata home.png';
 import izumi2 from '../assets/konata home 2.png';
 import {ReactTyped} from 'react-typed';
+import { MdOutlineAirlineSeatReclineNormal } from 'react-icons/md';
 
 const Hero = () => {
     return (
@@ -40,6 +41,7 @@ const Hero = () => {
                         loop
                     />
                 </div>
+                
             </div>
             </div>
         </div>
