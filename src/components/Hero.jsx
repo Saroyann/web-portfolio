@@ -42,7 +42,7 @@ const Hero = () => {
                         loop
                     />
                 </div>
-                <img src={scrollDown} alt="" />
+                <img className='w-[70px] md:w-[100px] mt-5 mx-auto' src={scrollDown} alt="" />
             </div>
             </div>
         </div>
