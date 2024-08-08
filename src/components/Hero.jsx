@@ -6,8 +6,9 @@ import {ReactTyped} from 'react-typed';
 
 const Hero = () => {
     return (
-        <div className='-z-0 max-w-[380px] h-[100vh] mx-auto bg-white'>
-            <div className="pt-28 relative mx-auto flex md:flex-col justify-center items-center">
+        <div className='-z-0 max-w-[380px] md:max-w-[768px] h-[100vh] mx-auto bg-white'>
+            <div className="pt-28 mx-auto flex flex-col justify-center items-center">
+                <div className='relative flex items-center justify-center bg-slate-500 w-[380px]'>
                 <div className="absolute bg-yellow-200 w-[300px] h-[300px] rounded-full animate-scale"></div>
                 <img
                     className="absolute left-[-10px] w-[190px] animate-fadeInLeft"
@@ -24,6 +25,7 @@ const Hero = () => {
                     src={hero}
                     alt="Profile"
                 />
+                </div>
             </div>
             <div className='text-center w-[280px] mx-auto mt-3'>
                 <h2 className='text-2xl font-medium'>Hello I am</h2>
