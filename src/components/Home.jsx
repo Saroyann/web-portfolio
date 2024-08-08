@@ -5,7 +5,7 @@ import Hero from './Hero'
 const Home = () => {
     return (
         <section id='home'>
-        <div className='h-[100vh]'>
+        <div>
             <Navbar />
             <Hero />
         </div>
