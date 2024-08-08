@@ -9,15 +9,15 @@ const Hero = () => {
         <div className='-z-0 max-w-[380px] md:max-w-[768px] h-[100vh] mx-auto bg-white'>
             <div className='md:flex md:flex-col md:items-center'>
             <div className="pt-28 mx-auto flex flex-col justify-center items-center">
-                <div className='relative flex items-center justify-center w-[480px]'>
+                <div className='relative flex items-center justify-center w-[480px] md:w-[600px]'>
                 <div className="absolute bg-yellow-200 w-[300px] h-[300px] md:w-[500px] md:h-[500px] rounded-full"></div>
                 <img
-                    className="absolute left-[50px] w-[190px] md:left-[-70px] md:w-[260px]"
+                    className="absolute left-[50px] w-[190px] md:left-[-70px] md:w-[360px]"
                     src={izumi1}
                     alt="Izumi 1"
                 />
                 <img
-                    className="absolute right-[50px] w-[190px]  md:right-[-70px] md:w-[260px]"
+                    className="absolute right-[50px] w-[190px]  md:right-[-70px] md:w-[360px]"
                     src={izumi2}
                     alt="Izumi 2"
                 />
