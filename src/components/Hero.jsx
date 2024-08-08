@@ -10,7 +10,7 @@ const Hero = () => {
     return (
         <div className='-z-0 max-w-[380px] md:max-w-[768px] h-[100vh] mx-auto'>
             <div className='md:flex md:flex-col md:items-center'>
-            <div className="pt-28 mx-auto flex flex-col justify-center items-center">
+            <div className="pt-20 mx-auto flex flex-col justify-center items-center">
                 <div className='relative flex items-center justify-center w-[480px] md:w-[600px]'>
                 <div className="absolute bg-yellow-200 w-[300px] h-[300px] md:w-[500px] md:h-[500px] rounded-full"></div>
                 <img
@@ -24,7 +24,7 @@ const Hero = () => {
                     alt="Izumi 2"
                 />
                 <img
-                    className="relative w-[290px] md:w-[700px]"
+                    className="relative w-[330px] md:w-[700px]"
                     src={hero}
                     alt="Profile"
                 />
