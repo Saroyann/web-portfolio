@@ -6,8 +6,8 @@ import {ReactTyped} from 'react-typed';
 
 const Hero = () => {
     return (
-        <div className='-z-0 max-w-[1240px] h-[100vh] mx-auto'>
-            <div className="pt-28 relative mx-auto flex md:flex-col justify-center items-center bg-white">
+        <div className='-z-0 max-w-[380px] h-[100vh] mx-auto bg-white'>
+            <div className="pt-28 relative mx-auto flex md:flex-col justify-center items-center">
                 <div className="absolute bg-yellow-200 w-[300px] h-[300px] rounded-full animate-scale"></div>
                 <img
                     className="absolute left-[-10px] w-[190px] animate-fadeInLeft"
