@@ -12,19 +12,19 @@ const Hero = () => {
             <div className='md:flex md:flex-col md:items-center'>
             <div className="pt-20 mx-auto flex flex-col justify-center items-center">
                 <div className='relative flex items-center justify-center w-[480px] md:w-[600px]'>
-                <div className="absolute bg-yellow-200 w-[300px] h-[300px] md:w-[500px] md:h-[500px] rounded-full"></div>
+                <div className="absolute bg-yellow-200 w-[400px] h-[400px] md:w-[500px] md:h-[500px] rounded-full"></div>
                 <img
-                    className="absolute left-[50px] w-[190px] md:left-[-70px] md:w-[360px]"
+                    className="absolute left-[10px] w-[210px] md:left-[-70px] md:w-[360px]"
                     src={izumi1}
                     alt="Izumi 1"
                 />
                 <img
-                    className="absolute right-[50px] w-[190px]  md:right-[-70px] md:w-[360px]"
+                    className="absolute right-[10px] w-[210px]  md:right-[-70px] md:w-[360px]"
                     src={izumi2}
                     alt="Izumi 2"
                 />
                 <img
-                    className="relative w-[330px] md:w-[700px]"
+                    className="relative w-[400px] md:w-[700px]"
                     src={hero}
                     alt="Profile"
                 />
