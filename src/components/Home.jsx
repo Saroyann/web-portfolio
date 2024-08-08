@@ -5,7 +5,7 @@ import Hero from './Hero'
 const Home = () => {
     return (
         <section id='home'>
-        <div className='max-w-[1240px] h-[100vh] mx-auto'>
+        <div className=''>
             <Navbar />
             <Hero />
         </div>

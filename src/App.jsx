@@ -6,7 +6,9 @@ function App() {
 
   return (
     <>
+    <div className='max-w-[1240px] mx-auto bg-slate-500'>
       <Home />
+    </div>
     </>
   )
 }
