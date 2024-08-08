@@ -7,15 +7,15 @@ import {ReactTyped} from 'react-typed';
 const Hero = () => {
     return (
         <div className='-z-0 max-w-[1240px] h-[100vh] mx-auto'>
-            <div className="pt-28 relative mx-auto flex md:flex-col justify-center items-center">
+            <div className="pt-28 relative mx-auto flex md:flex-col justify-center items-center bg-white">
                 <div className="absolute bg-yellow-200 w-[300px] h-[300px] rounded-full animate-scale"></div>
                 <img
-                    className="absolute left-[-100px] w-[190px] animate-fadeInLeft"
+                    className="absolute left-[-10px] w-[190px] animate-fadeInLeft"
                     src={izumi1}
                     alt="Izumi 1"
                 />
                 <img
-                    className="absolute right-[-100px] w-[190px] animate-fadeInRight"
+                    className="absolute right-[-10px] w-[190px] animate-fadeInRight"
                     src={izumi2}
                     alt="Izumi 2"
                 />
