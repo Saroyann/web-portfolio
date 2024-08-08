@@ -7,21 +7,22 @@ import {ReactTyped} from 'react-typed';
 const Hero = () => {
     return (
         <div className='-z-0 max-w-[380px] md:max-w-[768px] h-[100vh] mx-auto bg-white'>
+            <div className='flex flex-col items-center md:mt-36'>
             <div className="pt-28 mx-auto flex flex-col justify-center items-center">
-                <div className='relative flex items-center justify-center bg-slate-500 w-[380px]'>
-                <div className="absolute bg-yellow-200 w-[300px] h-[300px] rounded-full animate-scale"></div>
+                <div className='relative flex items-center justify-center w-[480px]'>
+                <div className="absolute bg-yellow-200 w-[300px] h-[300px] md:w-[500px] md:h-[500px] rounded-full"></div>
                 <img
-                    className="absolute left-[-10px] w-[190px] animate-fadeInLeft"
+                    className="absolute left-[-10px] w-[190px] md:left-[-70px] md:w-[260px]"
                     src={izumi1}
                     alt="Izumi 1"
                 />
                 <img
-                    className="absolute right-[-10px] w-[190px] animate-fadeInRight"
+                    className="absolute right-[-10px] w-[190px]  md:right-[-70px] md:w-[260px]"
                     src={izumi2}
                     alt="Izumi 2"
                 />
                 <img
-                    className="relative w-[290px] animate-scaleIn"
+                    className="relative w-[290px] md:w-[700px]"
                     src={hero}
                     alt="Profile"
                 />
@@ -39,6 +40,7 @@ const Hero = () => {
                         loop
                     />
                 </div>
+            </div>
             </div>
         </div>
     );
