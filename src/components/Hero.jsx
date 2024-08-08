@@ -2,6 +2,7 @@ import React from 'react';
 import hero from '../assets/profile.png';
 import izumi1 from '../assets/konata home.png';
 import izumi2 from '../assets/konata home 2.png';
+import scrollDown from '../assets/scroll down.png'
 import {ReactTyped} from 'react-typed';
 import { MdOutlineAirlineSeatReclineNormal } from 'react-icons/md';
 
@@ -41,7 +42,7 @@ const Hero = () => {
                         loop
                     />
                 </div>
-                
+                <img src={scrollDown} alt="" />
             </div>
             </div>
         </div>
