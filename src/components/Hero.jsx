@@ -43,6 +43,13 @@ const Hero = () => {
                     />
                 </div>
                 <motion.img
+                initial={{ opacity: 0, y: -50 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0 }}
+                transition={{ 
+                    duration: 2, 
+                    repeat: Infinity,
+                    repeatType: "loop" }}
                 
                 className='w-[70px] md:w-[100px] mt-5 mx-auto' src={scrollDown} alt="" />
             </div>
