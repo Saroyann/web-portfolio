@@ -4,7 +4,7 @@ import izumi1 from '../assets/konata home.png';
 import izumi2 from '../assets/konata home 2.png';
 import scrollDown from '../assets/scroll down.png'
 import {ReactTyped} from 'react-typed';
-import { MdOutlineAirlineSeatReclineNormal } from 'react-icons/md';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
     return (
@@ -42,7 +42,9 @@ const Hero = () => {
                         loop
                     />
                 </div>
-                <img className='w-[70px] md:w-[100px] mt-5 mx-auto' src={scrollDown} alt="" />
+                <motion.img
+                
+                className='w-[70px] md:w-[100px] mt-5 mx-auto' src={scrollDown} alt="" />
             </div>
             </div>
         </div>
