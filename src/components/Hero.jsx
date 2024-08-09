@@ -1,8 +1,5 @@
 import React from 'react';
-import hero from '../assets/profile.png';
-import izumi1 from '../assets/konata home.png';
-import izumi2 from '../assets/konata home 2.png';
-import scrollDown from '../assets/scroll down.png'
+import {hero,izumi1,izumi2,scrollDown} from '../assets/index.js'
 import {ReactTyped} from 'react-typed';
 import { motion } from 'framer-motion';
 

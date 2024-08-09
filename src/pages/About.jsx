@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
 import { ReactTyped } from 'react-typed';
 import { motion } from 'framer-motion';
-import about1 from '../assets/about.jpeg';
-import about2 from '../assets/about 2.jpeg';
-import about3 from '../assets/about 3.jpeg';
-import about4 from '../assets/about 4.jpeg';
-import about5 from '../assets/about 5.jpeg';
+import {about1,about2,about3,about4,about5} from '../assets/index.js'
 import { FaCodepen, FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const photos = [
@@ -82,62 +78,22 @@ const About = () => {
                         Saya adalah seorang Web Developer (Frontend) yang saat ini sedang menempuh pendidikan di STMIK Wicida, jurusan Teknik Informatika. Selain pengembangan web, saya juga memiliki minat yang besar di bidang desain grafis sebagai Digital Artist dan di bidang musik sebagai Music Producer.
                     </p>
 
-                    <h2 className='text-2xl md:text-4xl my-3 md:my-2 font-medium'>Find Me On :</h2>
+                    <h2 className='text-2xl md:text-4xl my-3 md:my-5 font-medium'>Find Me On :</h2>
                     <div className='flex justify-around pb-5'>
-                        {window.innerWidth < 768
-                            ?
-                            <a href="https://github.com/Saroyann" target='_blank'><FaGithub size={40} /></a>
-                            :
-                            <a href='https://github.com/Saroyann' target='_blank'><FaGithub size={60} /></a>
-                        }
-
-                        {window.innerWidth < 768
-                            ?
-
-                            <a href='https://codepen.io/Saroyann' target='_blank'><FaCodepen size={40} /></a>
-
-                            :
-
-                            <a href='https://codepen.io/Saroyann' target='_blank'><FaCodepen size={60} /></a>
-                            
-                        }
-
-                        {window.innerWidth < 768
-                            ?
-
-                            <a href='https://www.linkedin.com/in/william-saroyan-46678327b/' target='_blank'><FaLinkedin size={40} /></a>
-                            
-
-                            :
-
-                            <a href='https://www.linkedin.com/in/william-saroyan-46678327b/' target='_blank'><FaLinkedin size={60} /></a>
-                            
-
-                        }
-
-                        {window.innerWidth < 768
-                            ?
-
-                            <a href='https://www.instagram.com/saroyan_yan030/' target='_blank'><FaInstagram size={40} /></a>
-
-                            :
-
-                            <a href='https://www.instagram.com/saroyan_yan030/' target='_blank'><FaInstagram size={60} /></a>
-                            
-
-                        }
-
-                        {window.innerWidth < 768
-                            ?
-
-                            <a href='https://web.facebook.com/profile.php?id=100068010153458' target='_blank'><FaFacebook size={40} /></a>
-
-                            :
-
-                            <a href='https://web.facebook.com/profile.php?id=100068010153458' target='_blank'><FaFacebook size={60} /></a>
-                            
-                        }
+                        {(() => {
+                            const iconSize = window.innerWidth < 768 ? 40 : 60;
+                            return (
+                                <>
+                                    <a href="https://github.com/Saroyann" target='_blank'><FaGithub size={iconSize} /></a>
+                                    <a href='https://codepen.io/Saroyann' target='_blank'><FaCodepen size={iconSize} /></a>
+                                    <a href='https://www.linkedin.com/in/william-saroyan-46678327b/' target='_blank'><FaLinkedin size={iconSize} /></a>
+                                    <a href='https://www.instagram.com/saroyan_yan030/' target='_blank'><FaInstagram size={iconSize} /></a>
+                                    <a href='https://web.facebook.com/profile.php?id=100068010153458' target='_blank'><FaFacebook size={iconSize} /></a>
+                                </>
+                            );
+                        })()}
                     </div>
+
                 </div>
             </div>
         </section>

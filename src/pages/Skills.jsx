@@ -1,19 +1,5 @@
 import React, { useState } from 'react';
-import vsCode from '../assets/skill-web/vsCode.png'
-import html from '../assets/skill-web/html.png'
-import css from '../assets/skill-web/css.png'
-import js from '../assets/skill-web/javascript.png'
-import react from '../assets/skill-web/react.png'
-import tailwind from '../assets/skill-web/tailwind.png'
-import webdev from '../assets/webdev.png'
-import pentab from '../assets/pentab.png'
-import music from '../assets/music.png'
-
-import sai from '../assets/skill-digArtist/sai.png'
-import huion from '../assets/skill-digArtist/huion.png'
-import ibis from '../assets/skill-digArtist/ibis.png'
-
-import fl from '../assets/skill-music/flstudio.png'
+import {vsCode,html,css,js,react,tailwind,webdev,pentab,music,fl,huion,sai,ibis} from '../assets/index.js'
 
 const Skills = () => {
     const [visibleSkill, setVisibleSkill] = useState(null);
