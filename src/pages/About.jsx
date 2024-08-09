@@ -86,43 +86,31 @@ const About = () => {
                     <div className='flex justify-around pb-5'>
                         {window.innerWidth < 768
                             ?
-                            <a href="" target='_blank'><FaGithub size={40} /></a>
+                            <a href="https://github.com/Saroyann" target='_blank'><FaGithub size={40} /></a>
                             :
-                            <a href='' target='_blank'><FaGithub size={60} /></a>
+                            <a href='https://github.com/Saroyann' target='_blank'><FaGithub size={60} /></a>
                         }
 
                         {window.innerWidth < 768
                             ?
 
-                            <a href='' target='_blank'><FaCodepen size={40} /></a>
+                            <a href='https://codepen.io/Saroyann' target='_blank'><FaCodepen size={40} /></a>
 
                             :
 
-                            <a href='' target='_blank'><FaCodepen size={60} /></a>
+                            <a href='https://codepen.io/Saroyann' target='_blank'><FaCodepen size={60} /></a>
                             
                         }
 
                         {window.innerWidth < 768
                             ?
 
-                            <a href='' target='_blank'><FaLinkedin size={40} /></a>
+                            <a href='https://www.linkedin.com/in/william-saroyan-46678327b/' target='_blank'><FaLinkedin size={40} /></a>
                             
 
                             :
 
-                            <a href='' target='_blank'><FaLinkedin size={60} /></a>
-                            
-
-                        }
-
-                        {window.innerWidth < 768
-                            ?
-
-                            <a href='' target='_blank'><FaInstagram size={40} /></a>
-
-                            :
-
-                            <a href='' target='_blank'><FaInstagram size={60} /></a>
+                            <a href='https://www.linkedin.com/in/william-saroyan-46678327b/' target='_blank'><FaLinkedin size={60} /></a>
                             
 
                         }
@@ -130,11 +118,23 @@ const About = () => {
                         {window.innerWidth < 768
                             ?
 
-                            <a href='' target='_blank'><FaFacebook size={40} /></a>
+                            <a href='https://www.instagram.com/saroyan_yan030/' target='_blank'><FaInstagram size={40} /></a>
 
                             :
 
-                            <a href='' target='_blank'><FaFacebook size={60} /></a>
+                            <a href='https://www.instagram.com/saroyan_yan030/' target='_blank'><FaInstagram size={60} /></a>
+                            
+
+                        }
+
+                        {window.innerWidth < 768
+                            ?
+
+                            <a href='https://web.facebook.com/profile.php?id=100068010153458' target='_blank'><FaFacebook size={40} /></a>
+
+                            :
+
+                            <a href='https://web.facebook.com/profile.php?id=100068010153458' target='_blank'><FaFacebook size={60} /></a>
                             
                         }
                     </div>

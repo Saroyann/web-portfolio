@@ -5,6 +5,9 @@ import css from '../assets/skill-web/css.png'
 import js from '../assets/skill-web/javascript.png'
 import react from '../assets/skill-web/react.png'
 import tailwind from '../assets/skill-web/tailwind.png'
+import webdev from '../assets/webdev.png'
+import pentab from '../assets/pentab.png'
+import music from '../assets/music.png'
 
 import sai from '../assets/skill-digArtist/sai.png'
 import huion from '../assets/skill-digArtist/huion.png'
@@ -28,13 +31,13 @@ const Skills = () => {
     };
 
     return (
-        <section id='skills' className='h-[100vh] pt-[3rem] md:pt-[5rem] relative'>
+        <section id='skills' className='h-[100vh] pt-[3rem] md:pt-[4rem] relative'>
 
             <div className={`fixed top-0 left-0 mx-auto w-full h-[100vh] backdrop-blur-lg z-20 ${visibleSkill ? '' : 'hidden'}`}>
                 <div className='flex justify-center items-center'>
                     <div className='relative w-[300px] h-[400px] rounded-lg bg-slate-200 mt-[150px] shadow-lg'>
-                        <div onClick={() => setVisibleSkill(null)} className='absolute right-[-10px] top-[-25px] text-2xl bg-red-500 p-3 rounded-lg text-white'>X</div>
-                        
+                        <div onClick={() => setVisibleSkill(null)} className='absolute right-[-10px] top-[-25px] text-2xl bg-red-500 p-3 rounded-lg text-white cursor-pointer'>X</div>
+
                         {visibleSkill === 'Web Developer' && (
                             <div>
                                 <h2 className='text-center my-3 font-medium text-2xl w-full text-yellow-500'>Deskripsi</h2>
@@ -47,7 +50,7 @@ const Skills = () => {
                                     <img className='w-[50px]' src={js} />
                                     <img className='w-[50px]' src={react} />
                                     <img className='w-[50px]' src={tailwind} />
-                                    
+
                                 </div>
                             </div>
                         )}
@@ -74,7 +77,7 @@ const Skills = () => {
 
                                 <h2 className='text-center my-3 font-medium text-2xl w-full text-yellow-500'>Tools</h2>
                                 <div className='flex justify-center'>
-                                <img className='w-[50px]' src={fl} />
+                                    <img className='w-[50px]' src={fl} />
                                 </div>
                             </div>
                         )}
@@ -82,13 +85,13 @@ const Skills = () => {
                 </div>
             </div>
 
-            <h1 className='mt-3 text-3xl text-center font-bold'>My Skills</h1>
-            <h2 className='text-center text-2xl font-medium mt-2'>Skills Overview:</h2>
+            <h1 className='mt-3 text-3xl md:text-6xl font-bold py-2 md:py-5 text-center'>My Skills</h1>
+            <h2 className='text-center text-2xl md:text-4xl font-medium mt-2'>Skills Overview:</h2>
 
-            <div>
+            <div className='bg-slate-500 grid grid-cols-2'>
                 <div className='w-[300px] h-[330px] bg-slate-100 shadow-lg mx-auto my-6 rounded-xl'>
                     <div className='w-full h-[200px] rounded-t-xl'>
-                        <div className='img-1 rounded-t-xl w-[full] h-[200px] bg-cover'></div>
+                        <img className='w-[12rem] mx-auto pt-3' src={webdev} />
                     </div>
                     <h3 className='text-center text-2xl py-4'>Web Developer</h3>
                     <div onClick={handleWebDeveloperClick} className='text-center bg-yellow-300 rounded-lg w-fit mx-auto p-3 cursor-pointer shadow-md'>See Skills</div>
@@ -96,7 +99,7 @@ const Skills = () => {
 
                 <div className='w-[300px] h-[330px] bg-slate-100 shadow-lg mx-auto my-6 rounded-xl'>
                     <div className='w-full h-[200px] rounded-t-xl'>
-                        <div className='img-1 rounded-t-xl w-[full] h-[200px] bg-cover'></div>
+                        <img className='w-[6rem] mx-auto pt-14' src={pentab} alt="" />
                     </div>
                     <h3 className='text-center text-2xl py-4'>Digital Artist</h3>
                     <div onClick={handleDigitalArtistClick} className='text-center bg-yellow-300 rounded-lg w-fit mx-auto p-3 cursor-pointer shadow-md'>See Skills</div>
@@ -104,7 +107,7 @@ const Skills = () => {
 
                 <div className='w-[300px] h-[330px] bg-slate-100 shadow-lg mx-auto my-6 rounded-xl'>
                     <div className='w-full h-[200px] rounded-t-xl'>
-                        <div className='img-1 rounded-t-xl w-[full] h-[200px] bg-cover'></div>
+                        <img className='w-[6rem] mx-auto pt-14' src={music} alt="" />
                     </div>
                     <h3 className='text-center text-2xl py-4'>Music Producer</h3>
                     <div onClick={handleMusicProducerClick} className='text-center bg-yellow-300 rounded-lg w-fit mx-auto p-3 cursor-pointer shadow-md'>See Skills</div>
