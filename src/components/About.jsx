@@ -83,11 +83,30 @@ const About = () => {
                     </p>
 
                     <div className='flex justify-around my-2'>
-                        <FaGithub  />
-                        <FaCodepen />
+                        {window.innerWidth < 768
+                            ?
+                            <FaGithub size={40} />
+
+                            :
+
+                            <FaGithub size={60} />
+                        }
+
+                        {window.innerWidth < 768
+                            ?
+
+                            <FaCodepen size={40} />
+
+                            :
+
+                            <FaCodepen size={60} />
+                        }
+
+                        
+
                         <FaLinkedin />
                         <FaInstagram />
-                        <FaFacebook  />
+                        <FaFacebook />
                     </div>
                 </div>
             </div>
