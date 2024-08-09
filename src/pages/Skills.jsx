@@ -1,4 +1,10 @@
 import React, { useState } from 'react';
+import vsCode from '../assets/skill-web/vsCode.png'
+import html from '../assets/skill-web/html.png'
+import css from '../assets/skill-web/css.png'
+import js from '../assets/skill-web/javascript.png'
+import react from '../assets/skill-web/react.png'
+import tailwind from '../assets/skill-web/tailwind.png'
 
 const Skills = () => {
     const [visibleSkill, setVisibleSkill] = useState(null);
@@ -26,7 +32,17 @@ const Skills = () => {
                         {visibleSkill === 'Web Developer' && (
                             <div>
                                 <h2 className='text-center my-3 font-medium text-2xl w-full text-yellow-500'>Deskripsi</h2>
-                                <p className='text-justify px-4'>Saya telah bekerja sebagai Web Developer sejak 2022. Saya menguasai HTML, CSS, JavaScript, dan React.</p>
+                                <p className='text-justify px-4'>Saya memulai perjalanan saya sebagai web developer sejak 2022. Saya belajar secara otodidak melalui youtube dan web course gratis.</p>
+                                <h2 className='text-center my-3 font-medium text-2xl w-full text-yellow-500'>Tools & tech stack</h2>
+                                <div className='grid grid-cols-3 mx-auto w-[200px]'>
+                                    <img className='w-[50px]' src={vsCode} />
+                                    <img className='w-[50px]' src={html} />
+                                    <img className='w-[50px]' src={css} />
+                                    <img className='w-[50px]' src={js} />
+                                    <img className='w-[50px]' src={react} />
+                                    <img className='w-[50px]' src={tailwind} />
+                                    
+                                </div>
                             </div>
                         )}
 
@@ -39,7 +55,7 @@ const Skills = () => {
 
                         {visibleSkill === 'Music Producer' && (
                             <div>
-                                <h2 className='text-center my-3 font-medium text-2xl w-full text-yellow-500'>Deskripsir</h2>
+                                <h2 className='text-center my-3 font-medium text-2xl w-full text-yellow-500'>Deskripsi</h2>
                                 <p className='text-justify px-4'>Saya seorang produser musik dengan pengalaman dalam pembuatan dan mixing lagu menggunakan software seperti FL Studio.</p>
                             </div>
                         )}
@@ -48,7 +64,7 @@ const Skills = () => {
             </div>
 
             <h1 className='mt-3 text-3xl text-center font-bold'>My Skills</h1>
-            <h2 className='text-center text-2xl font-medium mt-2'>bunch of my skills:</h2>
+            <h2 className='text-center text-2xl font-medium mt-2'>Skills Overview:</h2>
 
             <div>
                 <div className='w-[300px] h-[330px] bg-slate-100 shadow-lg mx-auto my-6 rounded-xl'>
