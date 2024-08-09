@@ -6,6 +6,9 @@ import js from '../assets/skill-web/javascript.png'
 import react from '../assets/skill-web/react.png'
 import tailwind from '../assets/skill-web/tailwind.png'
 
+import sai from '../assets/skill-digArtist/sai.png'
+import huion from '../assets/skill-digArtist/huion.png'
+
 const Skills = () => {
     const [visibleSkill, setVisibleSkill] = useState(null);
 
@@ -49,7 +52,14 @@ const Skills = () => {
                         {visibleSkill === 'Digital Artist' && (
                             <div>
                                 <h2 className='text-center my-3 font-medium text-2xl w-full text-yellow-500'>Deskripsi</h2>
-                                <p className='text-justify px-4'>Saya memiliki pengalaman dalam digital art, menggunakan tools seperti Photoshop dan Illustrator.</p>
+                                <p className='text-justify px-4'>Menggambar merupakan salah 1 dari hobi saya, saya mulai belajar menggambar digital pada tahun 2020. Saya biasanya menggambar menggunakan pentab ataupun handphone.</p>
+
+                                <h2 className='text-center my-3 font-medium text-2xl w-full text-yellow-500'>Tools</h2>
+
+                                <div className='grid grid-cols-2 w-[100px] gap-2 mx-auto'>
+                                    <img className='w-[50px]' src={sai} />
+                                    <img className='w-[50px]' src={huion} />
+                                </div>
                             </div>
                         )}
 
