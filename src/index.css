@@ -5,3 +5,7 @@
 * {
     font-family: "Poppins", arial;
 }
+
+.img-1 {
+    background-image: url(../src/assets/skills_web.jpg);
+}
