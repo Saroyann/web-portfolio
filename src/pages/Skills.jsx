@@ -88,29 +88,29 @@ const Skills = () => {
             <h1 className='mt-3 text-3xl md:text-6xl font-bold py-2 md:py-5 text-center'>My Skills</h1>
             <h2 className='text-center text-2xl md:text-4xl font-medium mt-2'>Skills Overview:</h2>
 
-            <div className='bg-slate-500 grid grid-cols-2'>
-                <div className='w-[300px] h-[330px] bg-slate-100 shadow-lg mx-auto my-6 rounded-xl'>
+            <div className='md:grid md:grid-cols-2 md:pt-10'>
+                <div className='w-[300px] h-[330px] md:w-[340px] md:h-[390px] bg-slate-100 shadow-lg mx-auto my-6 rounded-xl'>
                     <div className='w-full h-[200px] rounded-t-xl'>
                         <img className='w-[12rem] mx-auto pt-3' src={webdev} />
                     </div>
-                    <h3 className='text-center text-2xl py-4'>Web Developer</h3>
-                    <div onClick={handleWebDeveloperClick} className='text-center bg-yellow-300 rounded-lg w-fit mx-auto p-3 cursor-pointer shadow-md'>See Skills</div>
+                    <h3 className='text-center text-2xl md:text-4xl py-4'>Web Developer</h3>
+                    <div onClick={handleWebDeveloperClick} className='text-center bg-yellow-300 md:text-2xl rounded-lg w-fit mx-auto p-3 cursor-pointer shadow-md'>See Skills</div>
                 </div>
 
-                <div className='w-[300px] h-[330px] bg-slate-100 shadow-lg mx-auto my-6 rounded-xl'>
+                <div className='w-[300px] h-[330px] md:w-[340px] md:h-[390px] bg-slate-100 shadow-lg mx-auto my-6 rounded-xl'>
                     <div className='w-full h-[200px] rounded-t-xl'>
                         <img className='w-[6rem] mx-auto pt-14' src={pentab} alt="" />
                     </div>
-                    <h3 className='text-center text-2xl py-4'>Digital Artist</h3>
-                    <div onClick={handleDigitalArtistClick} className='text-center bg-yellow-300 rounded-lg w-fit mx-auto p-3 cursor-pointer shadow-md'>See Skills</div>
+                    <h3 className='text-center text-2xl md:text-4xl py-4'>Digital Artist</h3>
+                    <div onClick={handleDigitalArtistClick} className='text-center bg-yellow-300 md:text-2xl rounded-lg w-fit mx-auto p-3 cursor-pointer shadow-md'>See Skills</div>
                 </div>
 
-                <div className='w-[300px] h-[330px] bg-slate-100 shadow-lg mx-auto my-6 rounded-xl'>
+                <div className='w-[300px] h-[330px] md:w-[340px] md:h-[390px] bg-slate-100 shadow-lg mx-auto my-6 rounded-xl md:col-span-2'>
                     <div className='w-full h-[200px] rounded-t-xl'>
                         <img className='w-[6rem] mx-auto pt-14' src={music} alt="" />
                     </div>
-                    <h3 className='text-center text-2xl py-4'>Music Producer</h3>
-                    <div onClick={handleMusicProducerClick} className='text-center bg-yellow-300 rounded-lg w-fit mx-auto p-3 cursor-pointer shadow-md'>See Skills</div>
+                    <h3 className='text-center text-2xl md:text-4xl py-4'>Music Producer</h3>
+                    <div onClick={handleMusicProducerClick} className='text-center bg-yellow-300 md:text-2xl rounded-lg w-fit mx-auto p-3 cursor-pointer shadow-md'>See Skills</div>
                 </div>
             </div>
 
