@@ -28,7 +28,7 @@ const Navbar = () => {
     );
 
     const navClasses = `w-full lg:left-36 fixed top-0 left-0 ${isScrolled ? 'backdrop-blur-sm' : ''} z-50`;
-    const menuClasses = `h-full fixed top-0 w-4xl bg-slate-200 p-8 ease-in-out duration-500 ${menu ? 'left-0 text-center' : 'left-[-100vw]'}`;
+    const menuClasses = `h-full fixed top-0 w-4xl bg-slate-200 p-8 ease-in-out duration-500 ${menu ? 'left-0 text-center' : 'left-[-100vw]'} z-50`;
 
     return (
         <>
@@ -37,6 +37,7 @@ const Navbar = () => {
                 <h1 className=" text-2xl md:text-4xl ml-3 mt-2 font-bold text-yellow-500 mr-48">YIIM</h1>
                 <MenuIcon isOpen={menu} />
             </div>
+        </div>
             <ul className={menuClasses}>
                 <div className='mt-32 md:mt-72'>
                 <ToggleButton />
@@ -47,7 +48,6 @@ const Navbar = () => {
                 <li className="text-2xl md:text-4xl py-3 md:py-4"><a href="#Achievements">Certificates</a></li>
                 </div>
             </ul>
-        </div>
         </>
     );
 };
