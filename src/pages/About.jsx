@@ -32,7 +32,7 @@ const About = () => {
     };
 
     return (
-        <section className='h-[100vh] pt-[3rem] md:pt-[5rem]' id='about'>
+        <section className='h-[100vh] pt-[3rem] mb-[4rem] md:pt-[5rem]' id='about'>
             <div className='text-center'>
                 <h1 className='text-3xl md:text-6xl font-bold py-2 md:py-5'>About Me</h1>
             </div>
