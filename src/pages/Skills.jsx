@@ -8,6 +8,9 @@ import tailwind from '../assets/skill-web/tailwind.png'
 
 import sai from '../assets/skill-digArtist/sai.png'
 import huion from '../assets/skill-digArtist/huion.png'
+import ibis from '../assets/skill-digArtist/ibis.png'
+
+import fl from '../assets/skill-music/flstudio.png'
 
 const Skills = () => {
     const [visibleSkill, setVisibleSkill] = useState(null);
@@ -56,9 +59,10 @@ const Skills = () => {
 
                                 <h2 className='text-center my-3 font-medium text-2xl w-full text-yellow-500'>Tools</h2>
 
-                                <div className='grid grid-cols-2 w-[100px] gap-2 mx-auto'>
-                                    <img className='w-[50px]' src={sai} />
-                                    <img className='w-[50px]' src={huion} />
+                                <div className='grid grid-cols-3 w-[200px] mx-auto'>
+                                    <img className='w-[100px]' src={sai} />
+                                    <img className='w-[100px]' src={huion} />
+                                    <img className='w-[100px]' src={ibis} />
                                 </div>
                             </div>
                         )}
@@ -66,7 +70,12 @@ const Skills = () => {
                         {visibleSkill === 'Music Producer' && (
                             <div>
                                 <h2 className='text-center my-3 font-medium text-2xl w-full text-yellow-500'>Deskripsi</h2>
-                                <p className='text-justify px-4'>Saya seorang produser musik dengan pengalaman dalam pembuatan dan mixing lagu menggunakan software seperti FL Studio.</p>
+                                <p className='text-justify px-4'>Saya bukan hanya seseorang yang menikmati produk, tetapi juga seorang pengamat. Terpengaruh oleh musik EDM, saya mulai tertarik untuk membuat musik sendiri dengan gaya melodic sejak tahun 2023.</p>
+
+                                <h2 className='text-center my-3 font-medium text-2xl w-full text-yellow-500'>Tools</h2>
+                                <div className='flex justify-center'>
+                                <img className='w-[50px]' src={fl} />
+                                </div>
                             </div>
                         )}
                     </div>
