@@ -35,21 +35,21 @@ const Skills = () => {
 
             <div className={`fixed top-0 left-0 mx-auto w-full h-[100vh] backdrop-blur-lg z-20 ${visibleSkill ? '' : 'hidden'}`}>
                 <div className='flex justify-center items-center'>
-                    <div className='relative w-[300px] h-[400px] rounded-lg bg-slate-200 mt-[150px] shadow-lg'>
-                        <div onClick={() => setVisibleSkill(null)} className='absolute right-[-10px] top-[-25px] text-2xl bg-red-500 p-3 rounded-lg text-white cursor-pointer'>X</div>
+                    <div className='relative w-[300px] h-[400px] md:w-[580px] md:h-[700px] rounded-lg bg-slate-200 mt-[150px] md:mt-[250px] shadow-lg'>
+                        <div onClick={() => setVisibleSkill(null)} className='absolute right-[-10px] top-[-25px] text-2xl md:text-4xl bg-red-500 p-3 md:p-7 rounded-lg text-white cursor-pointer'>X</div>
 
                         {visibleSkill === 'Web Developer' && (
                             <div>
-                                <h2 className='text-center my-3 font-medium text-2xl w-full text-yellow-500'>Deskripsi</h2>
-                                <p className='text-justify px-4'>Saya memulai perjalanan saya sebagai web developer sejak 2022. Saya belajar secara otodidak melalui youtube dan web course gratis.</p>
-                                <h2 className='text-center my-3 font-medium text-2xl w-full text-yellow-500'>Tools & tech stack</h2>
-                                <div className='grid grid-cols-3 mx-auto w-[200px]'>
-                                    <img className='w-[50px]' src={vsCode} />
-                                    <img className='w-[50px]' src={html} />
-                                    <img className='w-[50px]' src={css} />
-                                    <img className='w-[50px]' src={js} />
-                                    <img className='w-[50px]' src={react} />
-                                    <img className='w-[50px]' src={tailwind} />
+                                <h2 className='text-center my-3 font-medium text-2xl md:text-5xl md:pt-10 w-full text-yellow-500'>Deskripsi</h2>
+                                <p className='text-justify px-4 md:px-8 md:py-10 md:text-2xl'>Saya memulai perjalanan saya sebagai web developer sejak 2022. Saya belajar secara otodidak melalui youtube dan web course gratis.</p>
+                                <h2 className='text-center my-3 font-medium text-2xl md:text-4xl w-full text-yellow-500'>Tools & tech stack</h2>
+                                <div className='grid grid-cols-3  mx-auto w-fit gap-3 md:gap-5'>
+                                    <img className='w-[50px] md:w-[100px]' src={vsCode} />
+                                    <img className='w-[50px] md:w-[100px]' src={html} />
+                                    <img className='w-[50px] md:w-[100px]' src={css} />
+                                    <img className='w-[50px] md:w-[100px]' src={js} />
+                                    <img className='w-[50px] md:w-[100px]' src={react} />
+                                    <img className='w-[50px] md:w-[100px]' src={tailwind} />
 
                                 </div>
                             </div>
@@ -57,27 +57,27 @@ const Skills = () => {
 
                         {visibleSkill === 'Digital Artist' && (
                             <div>
-                                <h2 className='text-center my-3 font-medium text-2xl w-full text-yellow-500'>Deskripsi</h2>
-                                <p className='text-justify px-4'>Menggambar merupakan salah 1 dari hobi saya, saya mulai belajar menggambar digital pada tahun 2020. Saya biasanya menggambar menggunakan pentab ataupun handphone.</p>
+                                <h2 className='text-center my-3 font-medium text-2xl w-full text-yellow-500 md:text-5xl md:pt-10'>Deskripsi</h2>
+                                <p className='text-justify px-4 md:px-8 md:py-10 md:text-2xl'>Menggambar merupakan salah 1 dari hobi saya, saya mulai belajar menggambar digital pada tahun 2020. Saya biasanya menggambar menggunakan pentab ataupun handphone.</p>
 
-                                <h2 className='text-center my-3 font-medium text-2xl w-full text-yellow-500'>Tools</h2>
+                                <h2 className='text-center my-3 font-medium text-2xl md:text-4xl w-full text-yellow-500'>Tools</h2>
 
-                                <div className='grid grid-cols-3 w-[200px] mx-auto'>
-                                    <img className='w-[100px]' src={sai} />
-                                    <img className='w-[100px]' src={huion} />
-                                    <img className='w-[100px]' src={ibis} />
+                                <div className='grid grid-cols-3 w-fit gap-3 mx-auto'>
+                                    <img className='w-[50px] md:w-[100px]' src={sai} />
+                                    <img className='w-[50px] md:w-[100px]' src={huion} />
+                                    <img className='w-[50px] md:w-[100px]' src={ibis} />
                                 </div>
                             </div>
                         )}
 
                         {visibleSkill === 'Music Producer' && (
                             <div>
-                                <h2 className='text-center my-3 font-medium text-2xl w-full text-yellow-500'>Deskripsi</h2>
-                                <p className='text-justify px-4'>Saya bukan hanya seseorang yang menikmati produk, tetapi juga seorang pengamat. Terpengaruh oleh musik EDM, saya mulai tertarik untuk membuat musik sendiri dengan gaya melodic sejak tahun 2023.</p>
+                                <h2 className='text-center my-3 font-medium text-2xl w-full text-yellow-500 md:text-5xl md:pt-10'>Deskripsi</h2>
+                                <p className='text-justify px-4 md:px-8 md:py-10 md:text-2xl'>Saya bukan hanya seseorang yang menikmati produk, tetapi juga seorang pengamat. Terpengaruh oleh musik EDM, saya mulai tertarik untuk membuat musik sendiri dengan gaya melodic sejak tahun 2023.</p>
 
-                                <h2 className='text-center my-3 font-medium text-2xl w-full text-yellow-500'>Tools</h2>
+                                <h2 className='text-center my-3 font-medium text-2xl w-full text-yellow-500 md:text-4xl md:pb-5'>Tools</h2>
                                 <div className='flex justify-center'>
-                                    <img className='w-[50px]' src={fl} />
+                                    <img className='w-[50px] md:w-[100px]' src={fl} />
                                 </div>
                             </div>
                         )}
