@@ -82,57 +82,60 @@ const About = () => {
                         Saya adalah seorang Web Developer (Frontend) yang saat ini sedang menempuh pendidikan di STMIK Wicida, jurusan Teknik Informatika. Selain pengembangan web, saya juga memiliki minat yang besar di bidang desain grafis sebagai Digital Artist dan di bidang musik sebagai Music Producer.
                     </p>
 
-                        <h2 className='text-2xl md:text-4xl my-3 md:my-2 font-medium'>Find Me On :</h2>
+                    <h2 className='text-2xl md:text-4xl my-3 md:my-2 font-medium'>Find Me On :</h2>
                     <div className='flex justify-around pb-5'>
                         {window.innerWidth < 768
                             ?
-                            <FaGithub size={40} />
-
+                            <a href="" target='_blank'><FaGithub size={40} /></a>
                             :
-
-                            <FaGithub size={60} />
+                            <a href='' target='_blank'><FaGithub size={60} /></a>
                         }
 
                         {window.innerWidth < 768
                             ?
 
-                            <FaCodepen size={40} />
+                            <a href='' target='_blank'><FaCodepen size={40} /></a>
 
                             :
 
-                            <FaCodepen size={60} />
+                            <a href='' target='_blank'><FaCodepen size={60} /></a>
+                            
                         }
 
                         {window.innerWidth < 768
-                        ?
+                            ?
 
-                        <FaLinkedin size={40}/>
+                            <a href='' target='_blank'><FaLinkedin size={40} /></a>
+                            
 
-                        :
+                            :
 
-                        <FaLinkedin size={60}/>
-
-                        }
-
-                        {window.innerWidth < 768
-                        ?
-                        <FaInstagram size={40}/>
-
-                        :
-
-                        <FaInstagram size={60}/>
+                            <a href='' target='_blank'><FaLinkedin size={60} /></a>
+                            
 
                         }
 
                         {window.innerWidth < 768
-                        ?
+                            ?
 
-                        <FaFacebook size={40} />
+                            <a href='' target='_blank'><FaInstagram size={40} /></a>
 
-                        :
+                            :
 
-                        <FaFacebook size={60} />
+                            <a href='' target='_blank'><FaInstagram size={60} /></a>
+                            
 
+                        }
+
+                        {window.innerWidth < 768
+                            ?
+
+                            <a href='' target='_blank'><FaFacebook size={40} /></a>
+
+                            :
+
+                            <a href='' target='_blank'><FaFacebook size={60} /></a>
+                            
                         }
                     </div>
                 </div>
