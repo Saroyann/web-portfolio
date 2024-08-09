@@ -52,7 +52,7 @@ const About = () => {
                         animate={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 0, x: -100 }}
                         transition={{ duration: 0.5 }}
-                        className='w-[100%] h-[280px] md:h-[600px] flex-shrink-0'
+                        className='w-[100%] h-[280px] md:h-[500px] flex-shrink-0'
                     >
                         <img
                             className='w-[260px] md:w-[500px] mx-auto rounded-lg'
@@ -69,7 +69,7 @@ const About = () => {
                     </button>
                 </div>
 
-                <div className='w-[300px] md:w-[500px] text-center mx-auto'>
+                <div className='w-[300px] md:w-[500px] text-center mx-auto md:mt-9'>
                     <h2 className='text-2xl md:text-4xl md:mb-2 font-medium'>An Ordinary</h2>
                     <ReactTyped
                         className='font-bold text-yellow-500 md:text-3xl'
@@ -82,7 +82,8 @@ const About = () => {
                         Saya adalah seorang Web Developer (Frontend) yang saat ini sedang menempuh pendidikan di STMIK Wicida, jurusan Teknik Informatika. Selain pengembangan web, saya juga memiliki minat yang besar di bidang desain grafis sebagai Digital Artist dan di bidang musik sebagai Music Producer.
                     </p>
 
-                    <div className='flex justify-around my-2'>
+                        <h2 className='text-2xl md:text-4xl my-3 md:my-2 font-medium'>Find Me On :</h2>
+                    <div className='flex justify-around pb-5'>
                         {window.innerWidth < 768
                             ?
                             <FaGithub size={40} />
@@ -102,11 +103,37 @@ const About = () => {
                             <FaCodepen size={60} />
                         }
 
-                        
+                        {window.innerWidth < 768
+                        ?
 
-                        <FaLinkedin />
-                        <FaInstagram />
-                        <FaFacebook />
+                        <FaLinkedin size={40}/>
+
+                        :
+
+                        <FaLinkedin size={60}/>
+
+                        }
+
+                        {window.innerWidth < 768
+                        ?
+                        <FaInstagram size={40}/>
+
+                        :
+
+                        <FaInstagram size={60}/>
+
+                        }
+
+                        {window.innerWidth < 768
+                        ?
+
+                        <FaFacebook size={40} />
+
+                        :
+
+                        <FaFacebook size={60} />
+
+                        }
                     </div>
                 </div>
             </div>
