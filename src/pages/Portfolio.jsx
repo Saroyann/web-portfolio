@@ -11,10 +11,33 @@ const Portfolio = () => {
             <div className='mx-auto w-fit'>
 
                 <div className={`pt-3 overflow-y-scroll ${window.innerWidth < 768 ? 'h-[570px]' : ''}`}>
+                    <div>
                     <img className='w-[290px] h-[345px] rounded-lg' src={calc} />
                     <a className='cursor-pointer' href="">
                         <div className='text-center mt-3 bg-yellow-400 p-2 rounded-xl'>Source Code</div>
                     </a>
+                    </div>
+
+                    <div>
+                    <img className='pt-4 w-[290px] h-[345px] rounded-lg' src={todolist} />
+                    <a className='cursor-pointer' href="">
+                        <div className='text-center mt-3 bg-yellow-400 p-2 rounded-xl'>Source Code</div>
+                    </a>
+                    </div>
+
+                    <div>
+                    <img className='pt-4 w-[290px] h-[345px] rounded-lg' src={weather} />
+                    <a className='cursor-pointer' href="">
+                        <div className='text-center mt-3 bg-yellow-400 p-2 rounded-xl'>Source Code</div>
+                    </a>
+                    </div>
+
+                    <div>
+                    <img className='pt-4 w-[290px] h-[345px] rounded-lg' src={qr} />
+                    <a className='cursor-pointer' href="">
+                        <div className='text-center mt-3 bg-yellow-400 p-2 rounded-xl'>Source Code</div>
+                    </a>
+                    </div>
                 </div>
 
             </div>
