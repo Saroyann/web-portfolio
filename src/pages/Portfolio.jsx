@@ -8,8 +8,8 @@ const Portfolio = () => {
             <h2 className='text-center text-2xl md:text-4xl font-medium my-2'>Bunch Of My Web Portfolio :</h2>
 
             <div className='mx-auto w-fit'>
-                <div className='w-[300px] h-[200px] bg-slate-200 rounded-lg'>
-                    <img src={calc} alt="" />
+                <div className='pt-5'>
+                    <img className='w-[300px] h-[345px] rounded-lg' src={calc} />
                 </div>
             </div>
         </section>
