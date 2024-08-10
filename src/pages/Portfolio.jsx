@@ -1,5 +1,6 @@
 import React from 'react'
-import {calc,qr,todolist,weather} from '../assets/index.js'
+import { calc, qr, todolist, weather } from '../assets/index.js'
+import { FaGithub } from 'react-icons/fa'
 
 const Portfolio = () => {
     return (
@@ -8,9 +9,14 @@ const Portfolio = () => {
             <h2 className='text-center text-2xl md:text-4xl font-medium my-2'>Bunch Of My Web Portfolio :</h2>
 
             <div className='mx-auto w-fit'>
-                <div className='pt-5'>
+
+                <div className={`pt-3 overflow-y-scroll ${window.innerWidth < 768 ? 'h-[570px]' : ''}`}>
                     <img className='w-[290px] h-[345px] rounded-lg' src={calc} />
+                    <a className='cursor-pointer' href="">
+                        <div className='text-center mt-3 bg-yellow-400 p-2 rounded-xl'>Source Code</div>
+                    </a>
                 </div>
+
             </div>
         </section>
     )
