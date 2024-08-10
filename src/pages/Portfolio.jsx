@@ -9,7 +9,7 @@ const Portfolio = () => {
 
             <div className='mx-auto w-fit'>
                 <div className='pt-5'>
-                    <img className='w-[300px] h-[345px] rounded-lg' src={calc} />
+                    <img className='w-[290px] h-[345px] rounded-lg' src={calc} />
                 </div>
             </div>
         </section>
