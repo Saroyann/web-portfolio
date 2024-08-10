@@ -17,7 +17,7 @@ const Skills = () => {
     };
 
     return (
-        <section id='skills' className='h-[100vh] overflow-y-scroll pt-[3rem] md:pt-[4rem]'>
+        <section id='skills' className='h-[100vh] pt-[3rem] md:pt-[4rem]'>
 
             <div className={`fixed top-0 left-0 mx-auto w-full h-[100vh] backdrop-blur-lg z-20 ${visibleSkill ? '' : 'hidden'}`}>
                 <div className='flex justify-center items-center'>
@@ -71,29 +71,29 @@ const Skills = () => {
                 </div>
             </div>
 
-            <h1 className='mt-3 text-3xl md:text-6xl font-bold py-2 md:py-5 text-center'>My Skills</h1>
+            <h1 className='text-3xl md:text-6xl font-bold py-2 md:py-5 text-center'>My Skills</h1>
             <h2 className='text-center text-2xl md:text-4xl font-medium mt-2'>Skills Overview:</h2>
 
-            <div className='md:grid md:grid-cols-2 md:pt-10'>
+            <div className={`md:grid md:grid-cols-2 md:pt-10 ${window.innerWidth < 768 ? 'h-[570px]' : ''} overflow-y-scroll`}>
                 <div className='w-[300px] h-[230px] md:w-[340px] md:h-[390px] bg-slate-100 shadow-lg mx-auto my-6 rounded-xl'>
-                    <div className='w-full h-[150px] rounded-t-xl'>
-                        <img className='w-[9rem] mx-auto pt-3' src={webdev} />
+                    <div className='w-full h-[150px] md:h-[245px] rounded-t-xl'>
+                        <img className='w-[9rem] md:w-[15rem] mx-auto pt-3' src={webdev} />
                     </div>
-                    <h3 className='text-center md:text-4xl'>Web Developer</h3>
+                    <h3 className='text-center md:text-4xl md:pb-5'>Web Developer</h3>
                     <div onClick={handleWebDeveloperClick} className='text-center bg-yellow-300 md:text-2xl rounded-lg w-fit mx-auto p-2 cursor-pointer shadow-md'>See Skills</div>
                 </div>
 
                 <div className='w-[300px] h-[230px] md:w-[340px] md:h-[390px] bg-slate-100 shadow-lg mx-auto my-6 rounded-xl'>
-                    <div className='w-full h-[115px] rounded-t-xl'>
-                        <img className='w-[5rem] mx-auto pt-8' src={pentab} alt="" />
+                    <div className='w-full h-[115px] md:h-[230px] rounded-t-xl'>
+                        <img className='w-[5rem] md:w-[8rem] mx-auto pt-8 md:pt-14' src={pentab} alt="" />
                     </div>
                     <h3 className='text-center md:text-4xl py-4'>Digital Artist</h3>
-                    <div onClick={handleDigitalArtistClick} className='text-center bg-yellow-300 md:text-2xl rounded-lg w-fit mx-auto p-2 cursor-pointer shadow-md'>See Skills</div>
+                    <div onClick={handleDigitalArtistClick} className='text-center bg-yellow-300 md:text-2xl rounded-lg w-fit mx-auto p-2 md:mt-1 cursor-pointer shadow-md'>See Skills</div>
                 </div>
 
                 <div className='w-[300px] h-[330px] md:w-[340px] md:h-[390px] bg-slate-100 shadow-lg mx-auto my-6 rounded-xl md:col-span-2'>
                     <div className='w-full h-[200px] rounded-t-xl'>
-                        <img className='w-[6rem] mx-auto pt-14' src={music} alt="" />
+                        <img className='w-[6rem] md:w-[8rem] mx-auto pt-14' src={music} alt="" />
                     </div>
                     <h3 className='text-center text-2xl md:text-4xl py-4'>Music Producer</h3>
                     <div onClick={handleMusicProducerClick} className='text-center bg-yellow-300 md:text-2xl rounded-lg w-fit mx-auto p-3 cursor-pointer shadow-md'>See Skills</div>
