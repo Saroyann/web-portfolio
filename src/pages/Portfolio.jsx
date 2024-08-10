@@ -1,4 +1,5 @@
 import React from 'react'
+import {calc,qr,todolist,weather} from '../assets/index.js'
 
 const Portfolio = () => {
     return (
