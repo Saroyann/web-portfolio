@@ -48,7 +48,7 @@ const Skills = () => {
 
                                 <h2 className='text-center my-3 font-medium text-2xl md:text-4xl w-full text-yellow-500'>Tools</h2>
 
-                                <div className='grid grid-cols-3 w-fit gap-3 mx-auto'>
+                                <div className='grid grid-cols-3 w-fit gap-3 md:mt-[3rem] mx-auto'>
                                     <img className='w-[50px] md:w-[100px]' src={sai} />
                                     <img className='w-[50px] md:w-[100px]' src={huion} />
                                     <img className='w-[50px] md:w-[100px]' src={ibis} />
