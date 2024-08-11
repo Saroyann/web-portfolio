@@ -19,7 +19,7 @@ const Certificates = () => {
         <section className='h-[100vh] pt-[2rem] md:pt-[4rem]' id='Achievements'>
             {isModalOpen && (
                 <div onClick={handleCloseModal} className='top-0 h-[100vh] w-full backdrop-blur-md fixed'>
-                    <div className='mt-[15rem]'>
+                    <div className='mt-[15rem] md:mt-[20rem]'>
                         <img src={selectedCertificate} alt="Certificate" />
                     </div>
                 </div>
