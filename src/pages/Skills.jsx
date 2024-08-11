@@ -30,12 +30,12 @@ const Skills = () => {
                                 <p className='text-justify px-4 md:px-8 md:py-10 md:text-2xl'>Saya memulai perjalanan saya sebagai web developer sejak 2022. Saya belajar secara otodidak melalui youtube dan web course gratis.</p>
                                 <h2 className='text-center my-3 font-medium text-2xl md:text-4xl w-full text-yellow-500'>Tools & tech stack</h2>
                                 <div className='grid grid-cols-3  mx-auto w-fit gap-3 md:gap-5'>
-                                    <img className='w-[50px] md:w-[100px]' src={vsCode} />
-                                    <img className='w-[50px] md:w-[100px]' src={html} />
-                                    <img className='w-[50px] md:w-[100px]' src={css} />
-                                    <img className='w-[50px] md:w-[100px]' src={js} />
-                                    <img className='w-[50px] md:w-[100px]' src={react} />
-                                    <img className='w-[50px] md:w-[100px]' src={tailwind} />
+                                    <img className='w-[50px] md:w-[100px] lg:w-[60px]' src={vsCode} />
+                                    <img className='w-[50px] md:w-[100px] lg:w-[60px]' src={html} />
+                                    <img className='w-[50px] md:w-[100px] lg:w-[60px]' src={css} />
+                                    <img className='w-[50px] md:w-[100px] lg:w-[60px]' src={js} />
+                                    <img className='w-[50px] md:w-[100px] lg:w-[60px]' src={react} />
+                                    <img className='w-[50px] md:w-[100px] lg:w-[60px]' src={tailwind} />
 
                                 </div>
                             </div>
@@ -48,7 +48,7 @@ const Skills = () => {
 
                                 <h2 className='text-center my-3 font-medium text-2xl md:text-4xl w-full text-yellow-500'>Tools</h2>
 
-                                <div className='grid grid-cols-3 w-fit gap-3 md:mt-[3rem] mx-auto'>
+                                <div className='grid grid-cols-3 w-fit gap-3 md:mt-[3rem] lg:mt-[1rem] mx-auto'>
                                     <img className='w-[50px] md:w-[100px]' src={sai} />
                                     <img className='w-[50px] md:w-[100px]' src={huion} />
                                     <img className='w-[50px] md:w-[100px]' src={ibis} />
