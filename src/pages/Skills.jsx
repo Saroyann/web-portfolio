@@ -21,7 +21,7 @@ const Skills = () => {
 
             <div className={`fixed top-0 left-0 mx-auto w-full h-[100vh] backdrop-blur-lg z-20 ${visibleSkill ? '' : 'hidden'}`}>
                 <div className='flex justify-center items-center'>
-                    <div className='relative w-[300px] h-[400px] md:w-[580px] md:h-[700px] rounded-lg bg-slate-200 mt-[150px] md:mt-[250px] shadow-lg'>
+                    <div className='relative w-[300px] h-[400px] md:w-[580px] md:h-[700px] lg:h-[590px] rounded-lg bg-slate-200 mt-[150px] md:mt-[250px] lg:mt-[100px] shadow-lg'>
                         <div onClick={() => setVisibleSkill(null)} className='absolute right-[-10px] top-[-25px] text-2xl md:text-4xl bg-red-500 p-3 md:p-7 rounded-lg text-white cursor-pointer'>X</div>
 
                         {visibleSkill === 'Web Developer' && (
