@@ -32,6 +32,31 @@ const Navbar = () => {
 
     return (
         <>
+
+        <div className='fixed left-0 md:hidden lg:block'>
+            <div>
+                <a href="#home">
+                    hello
+                </a>
+
+                <a href="#about">
+
+                </a>
+
+                <a href="#skills">
+
+                </a>
+
+                <a href="#portfolio">
+
+                </a>
+
+                <a href="#Achievements">
+
+                </a>
+            </div>
+        </div>
+
         <div className={navClasses}>
             <div className="flex items-center py-2">
                 <h1 className=" text-2xl md:text-4xl ml-3 mt-2 font-bold text-yellow-500 mr-48">YIIM</h1>
