@@ -51,3 +51,15 @@ import web1 from '../assets/certificate/1.jpg'
 import web2 from '../assets/certificate/2.jpg'
 
 export {web1,web2}
+
+//navbar
+
+//light mode
+
+import homeLight from '../assets/navbar/light/homeLight.png'
+import aboutMeLight from '../assets/navbar/light/aboutMeLight.png'
+import skillsLight from '../assets/navbar/light/skillLight.png'
+import portfolioLight from '../assets/navbar/light/portfolioLight.png'
+import certificateLight from '../assets/navbar/light/certificateLight.png'
+
+export {homeLight,aboutMeLight,skillsLight,portfolioLight,certificateLight}

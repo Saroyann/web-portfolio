@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import ToggleButton from './ToggleButton';
+import {homeLight,aboutMeLight,skillsLight,portfolioLight,certificateLight} from '../assets/index.js'
 
 const Navbar = () => {
     const [menu, setMenu] = useState(false);
@@ -36,7 +37,7 @@ const Navbar = () => {
         <div className='fixed left-0 md:hidden lg:block'>
             <div>
                 <a href="#home">
-                    hello
+                    <img src={homeLight} alt="" />
                 </a>
 
                 <a href="#about">
