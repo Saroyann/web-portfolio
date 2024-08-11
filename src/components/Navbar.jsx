@@ -33,34 +33,39 @@ const Navbar = () => {
 
     return (
         <>
-
-            <div className='fixed left-0 md:hidden lg:block w-[4rem]'>
-                <div className='mt-24 bg-slate-200 p-3'>
+            <div className='fixed left-5 hidden lg:block w-[5rem]'>
+                <div className='mt-28 bg-slate-200 p-4 rounded-full'>
                     <a href="#home">
-                        <img src={homeLight} />
+                        <img className='mt-5 hover:scale-75 duration-300' src={homeLight} />
                     </a>
 
                     <a href="#about">
-                        <img className='my-10' src={aboutMeLight} />
+                        <img className=' my-10 hover:scale-75 duration-300' src={aboutMeLight} />
                     </a>
 
                     <a href="#skills">
-                        <img className='my-10' src={skillsLight} />
+                        <img className=' my-10 hover:scale-75 duration-300' src={skillsLight} />
                     </a>
 
                     <a href="#portfolio">
-                        <img className='my-10' src={portfolioLight} />
+                        <img className=' my-10 hover:scale-75 duration-300' src={portfolioLight} />
                     </a>
 
                     <a href="#Achievements">
-                        <img className='my-10' src={certificateLight} />
+                        <img className=' my-10 hover:scale-75 duration-300' src={certificateLight} />
                     </a>
                 </div>
             </div>
 
             <div className={navClasses}>
-                <div className="flex items-center py-2">
-                    <h1 className=" text-2xl md:text-4xl ml-3 mt-2 font-bold text-yellow-500 mr-48">YIIM</h1>
+                <div className="flex lg:justify-between items-center py-2 lg:w-[80rem]">
+                    <h1 className=" text-2xl md:text-4xl ml-3 mt-2 font-bold text-yellow-500 mr-48 lg:mr-[0px]">YIIM</h1>
+                    {
+                        window.innerWidth < 1280 ?
+                        ''
+                        :
+                    <ToggleButton />
+                    }
                     <MenuIcon isOpen={menu} />
                 </div>
             </div>

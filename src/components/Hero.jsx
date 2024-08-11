@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 const Hero = () => {
     return (
         <div className='h-[100vh] mx-auto'>
+
             <div className={`${window.innerWidth <= 1280 ? 'overflow-hidden' : ''} lg:flex lg:justify-between lg:items-center lg:flex-row-reverse lg:h-[100vh]`}>
             <div className="pt-20 mx-auto flex flex-col justify-center items-center">
                 <div className='relative flex items-center justify-center w-[480px] md:w-[600px]'>

@@ -6,6 +6,7 @@ const Home = () => {
     return (
         <section id='home'>
         <div>
+            
             <Navbar />
             <Hero />
         </div>
