@@ -6,10 +6,10 @@ import { motion } from 'framer-motion';
 const Hero = () => {
     return (
         <div className='h-[100vh] mx-auto'>
-            <div className={`${window.innerWidth <= 1280 ? 'overflow-hidden' : ''} lg:flex lg:justify-between lg:items-center lg:flex-row lg:h-[100vh]`}>
+            <div className={`${window.innerWidth <= 1280 ? 'overflow-hidden' : ''} lg:flex lg:justify-between lg:items-center lg:flex-row-reverse lg:h-[100vh]`}>
             <div className="pt-20 mx-auto flex flex-col justify-center items-center">
                 <div className='relative flex items-center justify-center w-[480px] md:w-[600px]'>
-                <div className="absolute bg-yellow-200 w-[370px] h-[370px] md:w-[500px] md:h-[500px] lg:w-[650px] rounded-full"></div>
+                <div className="absolute bg-yellow-200 w-[370px] h-[370px] md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px] rounded-full"></div>
                 <img
                     className="absolute left-[50px] w-[170px] md:left-[-70px] md:w-[360px]"
                     src={izumi1}
