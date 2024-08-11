@@ -61,7 +61,7 @@ const Skills = () => {
                                 <h2 className='text-center my-3 font-medium text-2xl w-full text-yellow-500 md:text-5xl md:pt-10'>Deskripsi</h2>
                                 <p className='text-justify px-4 md:px-8 md:py-10 md:text-2xl'>Saya bukan hanya seseorang yang menikmati produk, tetapi juga seorang pengamat. Terpengaruh oleh musik EDM, saya mulai tertarik untuk membuat musik sendiri dengan gaya melodic sejak tahun 2023.</p>
 
-                                <h2 className='text-center my-3 font-medium text-2xl w-full text-yellow-500 md:text-4xl md:pb-5'>Tools</h2>
+                                <h2 className='text-center my-3 font-medium text-2xl w-full text-yellow-500 md:text-4xl md:pb-5 lg:pb-2'>Tools</h2>
                                 <div className='flex justify-center'>
                                     <img className='w-[50px] md:w-[100px]' src={fl} />
                                 </div>
