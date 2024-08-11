@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import ToggleButton from './ToggleButton';
-import {homeLight,aboutMeLight,skillsLight,portfolioLight,certificateLight} from '../assets/index.js'
+import { homeLight, aboutMeLight, skillsLight, portfolioLight, certificateLight } from '../assets/index.js'
 
 const Navbar = () => {
     const [menu, setMenu] = useState(false);
@@ -23,9 +23,9 @@ const Navbar = () => {
     }, []);
 
     const MenuIcon = ({ isOpen }) => (
-        isOpen ? 
-        <AiOutlineClose onClick={handleMenu} className="fixed lg:hidden right-3 top-3" size={30} /> : 
-        <AiOutlineMenu onClick={handleMenu} className="fixed lg:hidden right-3 top-3" size={30} />
+        isOpen ?
+            <AiOutlineClose onClick={handleMenu} className="fixed lg:hidden right-3 top-3" size={30} /> :
+            <AiOutlineMenu onClick={handleMenu} className="fixed lg:hidden right-3 top-3" size={30} />
     );
 
     const navClasses = `w-full lg:left-36 fixed top-0 left-0 ${isScrolled ? 'backdrop-blur-sm' : ''} z-50`;
@@ -34,44 +34,44 @@ const Navbar = () => {
     return (
         <>
 
-        <div className='fixed left-0 md:hidden lg:block'>
-            <div>
-                <a href="#home">
-                    <img src={homeLight} alt="" />
-                </a>
+            <div className='fixed left-0 md:hidden lg:block'>
+                <div>
+                    <a href="#home">
+                        <img src={homeLight} />
+                    </a>
 
-                <a href="#about">
+                    <a href="#about">
+                        <img src={aboutMeLight} />
+                    </a>
 
-                </a>
+                    <a href="#skills">
+                        <img src={skillsLight} />
+                    </a>
 
-                <a href="#skills">
+                    <a href="#portfolio">
+                        <img src={portfolioLight} />
+                    </a>
 
-                </a>
-
-                <a href="#portfolio">
-
-                </a>
-
-                <a href="#Achievements">
-
-                </a>
+                    <a href="#Achievements">
+                        <img src={certificateLight} />
+                    </a>
+                </div>
             </div>
-        </div>
 
-        <div className={navClasses}>
-            <div className="flex items-center py-2">
-                <h1 className=" text-2xl md:text-4xl ml-3 mt-2 font-bold text-yellow-500 mr-48">YIIM</h1>
-                <MenuIcon isOpen={menu} />
+            <div className={navClasses}>
+                <div className="flex items-center py-2">
+                    <h1 className=" text-2xl md:text-4xl ml-3 mt-2 font-bold text-yellow-500 mr-48">YIIM</h1>
+                    <MenuIcon isOpen={menu} />
+                </div>
             </div>
-        </div>
             <ul className={menuClasses}>
                 <div className='mt-32 md:mt-72'>
-                <ToggleButton />
-                <li className="text-2xl md:text-4xl py-3 md:py-4"><a href="#home">Home</a></li>
-                <li className="text-2xl md:text-4xl py-3 md:py-4"><a href="#about">About Me</a></li>
-                <li className="text-2xl md:text-4xl py-3 md:py-4"><a href="#skills">Skills</a></li>
-                <li className="text-2xl md:text-4xl py-3 md:py-4"><a href="#portfolio">Portfolio</a></li>
-                <li className="text-2xl md:text-4xl py-3 md:py-4"><a href="#Achievements">Certificates</a></li>
+                    <ToggleButton />
+                    <li className="text-2xl md:text-4xl py-3 md:py-4"><a href="#home">Home</a></li>
+                    <li className="text-2xl md:text-4xl py-3 md:py-4"><a href="#about">About Me</a></li>
+                    <li className="text-2xl md:text-4xl py-3 md:py-4"><a href="#skills">Skills</a></li>
+                    <li className="text-2xl md:text-4xl py-3 md:py-4"><a href="#portfolio">Portfolio</a></li>
+                    <li className="text-2xl md:text-4xl py-3 md:py-4"><a href="#Achievements">Certificates</a></li>
                 </div>
             </ul>
         </>
