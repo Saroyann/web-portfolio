@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import ToggleButton from './ToggleButton';
+import { motion } from 'framer-motion';
 import { homeLight, aboutMeLight, skillsLight, portfolioLight, certificateLight } from '../assets/index.js'
 
 const Navbar = () => {
@@ -33,7 +34,12 @@ const Navbar = () => {
 
     return (
         <>
-            <div className='fixed left-5 hidden lg:block w-[5rem]'>
+            <motion.div
+            initial={{x: '-100%', opacity: 0}}
+            animate={{x: 0, opacity: 1}}
+            transition={{duration: 2}}
+            duration={{}}
+                className='fixed left-5 hidden lg:block w-[5rem]'>
                 <div className='mt-28 bg-slate-200 p-4 rounded-full'>
                     <a href="#home">
                         <img className='mt-5 hover:scale-75 duration-300' src={homeLight} />
@@ -55,19 +61,23 @@ const Navbar = () => {
                         <img className=' my-10 hover:scale-75 duration-300' src={certificateLight} />
                     </a>
                 </div>
-            </div>
+            </motion.div>
 
             <div className={navClasses}>
-                <div className="flex lg:justify-between items-center py-2 lg:w-[80rem]">
+                <motion.div
+                initial={{y: '-100%', opacity: 0}}
+                animate={{y: 0, opacity: 1}}
+                transition={{duration:2}}
+                className="flex lg:justify-between items-center py-2 lg:w-[80rem]">
                     <h1 className=" text-2xl md:text-4xl ml-3 mt-2 font-bold text-yellow-500 mr-48 lg:mr-[0px]">YIIM</h1>
                     {
                         window.innerWidth < 1280 ?
-                        ''
-                        :
-                    <ToggleButton />
+                            ''
+                            :
+                            <ToggleButton />
                     }
                     <MenuIcon isOpen={menu} />
-                </div>
+                </motion.div>
             </div>
             <ul className={menuClasses}>
                 <div className='mt-32 md:mt-72'>
