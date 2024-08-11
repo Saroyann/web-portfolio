@@ -5,11 +5,11 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
     return (
-        <div className='-z-0 max-w-[380px] md:max-w-[768px] h-[100%] mx-auto'>
-            <div className='overflow-hidden md:flex md:flex-col md:items-center'>
+        <div className='h-[100vh] mx-auto'>
+            <div className={`${window.innerWidth <= 1280 ? 'overflow-hidden' : ''} lg:flex lg:justify-between lg:items-center lg:flex-row lg:h-[100vh]`}>
             <div className="pt-20 mx-auto flex flex-col justify-center items-center">
                 <div className='relative flex items-center justify-center w-[480px] md:w-[600px]'>
-                <div className="absolute bg-yellow-200 w-[370px] h-[370px] md:w-[500px] md:h-[500px] rounded-full"></div>
+                <div className="absolute bg-yellow-200 w-[370px] h-[370px] md:w-[500px] md:h-[500px] lg:w-[650px] rounded-full"></div>
                 <img
                     className="absolute left-[50px] w-[170px] md:left-[-70px] md:w-[360px]"
                     src={izumi1}
@@ -27,11 +27,11 @@ const Hero = () => {
                 />
                 </div>
             </div>
-            <div className='text-center w-[280px] md:w-[500px] mx-auto mt-3'>
-                <h2 className='text-2xl md:text-3xl font-medium'>Hello I'm</h2>
-                <h1 className='text-3xl md:text-5xl font-bold py-2 md:py-5'>William Saroyan (YIIM)</h1>
+            <div className='text-center w-[280px] md:w-[500px] lg:w-[550px] mx-auto mt-3 lg:mt-40'>
+                <h2 className='text-2xl md:text-3xl lg:text-4xl font-medium'>Hello I'm</h2>
+                <h1 className='text-3xl md:text-5xl font-bold py-2 md:py-5 lg:py-7 lg:text-6xl'>William Saroyan (YIIM)</h1>
                 <div className='flex justify-center md:text-3xl'>
-                    <p className='pr-1'>Seorang </p>
+                    <p className='pr-1 lg:pr-3 lg:pb-10'>Seorang </p>
                     <ReactTyped
                         className='font-bold text-yellow-500'
                         strings={['Web Developer', 'Digital Artist', 'Music Producer']}
