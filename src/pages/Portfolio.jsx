@@ -7,9 +7,9 @@ const Portfolio = () => {
             <h1 className='mt-3 text-3xl md:text-6xl font-bold py-2 md:py-5 text-center'>Web Portfolio</h1>
             <h2 className='text-center text-2xl md:text-4xl font-medium my-2'>Bunch Of My Web Portfolio :</h2>
 
-            <div className={`pt-3 md:pt-0 overflow-y-scroll ${window.innerWidth < 768 ? 'h-[570px]' : ''}`}>
+            <div className={`pt-3 md:pt-0 overflow-y-scroll md:overflow-y-visible ${window.innerWidth < 768 ? 'h-[570px]' : ''}`}>
 
-                <div className='mx-auto w-fit md:gap-10 md:grid md:grid-cols-2 md:pb-14'>
+                <div className='mx-auto w-fit md:gap-10 md:grid md:grid-cols-2 lg:grid-cols-4 md:pb-14'>
 
                     <div>
                         <div className='text-2xl md:text-4xl text-center pb-2 md:pt-7'>Kalkulator</div>

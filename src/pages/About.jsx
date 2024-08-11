@@ -33,10 +33,10 @@ const About = () => {
                 <h1 className='text-3xl md:text-6xl font-bold py-2 md:py-5'>About Me</h1>
             </div>
 
-            <div>
-                <div className='relative py-5 overflow-hidden w-[100%] flex items-center justify-center'>
+            <div className='mx-auto lg:flex lg:items-center lg:justify-between lg:w-[1000px]'>
+                <div className='relative py-5 overflow-hidden lg:overflow-visible w-[100%] flex items-center justify-center'>
                     <button
-                        className='absolute left-0 z-10 text-3xl md:text-5xl p-2'
+                        className='absolute left-0 lg:left-[-50px] z-10 text-3xl md:text-5xl p-2'
                         onClick={prevSlide}
                     >
                         &lt;
@@ -58,14 +58,14 @@ const About = () => {
                     </motion.div>
 
                     <button
-                        className='absolute right-0 z-10 text-3xl md:text-5xl p-2'
+                        className='absolute right-0 lg:right-[-50px] z-10 text-3xl md:text-5xl p-2'
                         onClick={nextSlide}
                     >
                         &gt;
                     </button>
                 </div>
 
-                <div className='w-[300px] md:w-[500px] text-center mx-auto md:mt-9'>
+                <div className='w-[300px] md:w-[500px] lg:w-[1000px] lg:ml-[5rem] text-center mx-auto md:mt-9'>
                     <h2 className='text-2xl md:text-4xl md:mb-2 font-medium'>An Ordinary</h2>
                     <ReactTyped
                         className='font-bold text-yellow-500 md:text-3xl'

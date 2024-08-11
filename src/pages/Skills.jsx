@@ -74,7 +74,7 @@ const Skills = () => {
             <h1 className='text-3xl md:text-6xl font-bold py-2 md:py-5 text-center'>My Skills</h1>
             <h2 className='text-center text-2xl md:text-4xl font-medium mt-2'>Skills Overview:</h2>
 
-            <div className={`md:grid md:grid-cols-2 md:pt-10 ${window.innerWidth < 768 ? 'h-[570px]' : ''} overflow-y-scroll`}>
+            <div className={`md:grid md:grid-cols-2 lg:grid-cols-3 md:pt-10 ${window.innerWidth < 768 ? 'h-[570px]' : ''} overflow-y-scroll md:overflow-y-visible`}>
                 <div className='w-[300px] h-[230px] md:w-[340px] md:h-[390px] bg-slate-100 shadow-lg mx-auto my-6 rounded-xl'>
                     <div className='w-full h-[150px] md:h-[245px] rounded-t-xl'>
                         <img className='w-[9rem] md:w-[15rem] mx-auto pt-3' src={webdev} />
@@ -91,7 +91,7 @@ const Skills = () => {
                     <div onClick={handleDigitalArtistClick} className='text-center bg-yellow-300 md:text-2xl rounded-lg w-fit mx-auto p-2 md:mt-1 cursor-pointer shadow-md'>See Skills</div>
                 </div>
 
-                <div className='w-[300px] h-[230px] md:w-[340px] md:h-[390px] bg-slate-100 shadow-lg mx-auto my-6 rounded-xl md:col-span-2'>
+                <div className={`w-[300px] h-[230px] md:w-[340px] md:h-[390px] bg-slate-100 shadow-lg mx-auto my-6 rounded-xl ${window.innerWidth < 1204 ? 'md:col-span-2' : ''}`}>
                     <div className='w-full h-[115px] md:h-[230px] rounded-t-xl'>
                         <img className='w-[5rem] md:w-[8rem] mx-auto pt-8 md:pt-14' src={music} alt="" />
                     </div>
