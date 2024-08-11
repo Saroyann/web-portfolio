@@ -34,26 +34,26 @@ const Navbar = () => {
     return (
         <>
 
-            <div className='fixed left-0 md:hidden lg:block'>
-                <div>
+            <div className='fixed left-0 md:hidden lg:block w-[4rem]'>
+                <div className='mt-24 bg-slate-200 p-3'>
                     <a href="#home">
                         <img src={homeLight} />
                     </a>
 
                     <a href="#about">
-                        <img src={aboutMeLight} />
+                        <img className='my-10' src={aboutMeLight} />
                     </a>
 
                     <a href="#skills">
-                        <img src={skillsLight} />
+                        <img className='my-10' src={skillsLight} />
                     </a>
 
                     <a href="#portfolio">
-                        <img src={portfolioLight} />
+                        <img className='my-10' src={portfolioLight} />
                     </a>
 
                     <a href="#Achievements">
-                        <img src={certificateLight} />
+                        <img className='my-10' src={certificateLight} />
                     </a>
                 </div>
             </div>
