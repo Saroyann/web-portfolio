@@ -44,3 +44,10 @@ import todolist from '../assets/portfolio/todolist.jpg'
 import weather from '../assets/portfolio/weather.jpg'
 
 export {calc,qr,todolist,weather}
+
+//page certificate
+
+import web1 from '../assets/certificate/1.jpg'
+import web2 from '../assets/certificate/2.jpg'
+
+export {web1,web2}

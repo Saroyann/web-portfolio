@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Skills from './pages/Skills'
 import Portfolio from './pages/Portfolio'
+import Certificates from './pages/Certificates'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Skills />
       <Portfolio />
+      <Certificates />
     </div>
     </>
   )
