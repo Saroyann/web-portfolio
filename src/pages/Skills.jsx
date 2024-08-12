@@ -4,7 +4,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useTheme } from '../assets/ThemeContext.jsx';
 import { useInView } from 'react-intersection-observer';
 
-const animated = ({children}) => {
+function Animated({ children, animationKey }) {
     const [ref, inView] = useInView({
         triggerOnce: false,
         threshold: 0.1
@@ -15,10 +15,26 @@ const animated = ({children}) => {
     React.useEffect(() => {
         if (inView) {
             controls.start('visible');
+        } else {
+            controls.start('hidden');
         }
-    }, [inView, controls])
+    }, [inView, controls, animationKey])
 
-    
+    return (
+        <motion.div
+            ref={ref}
+            key={animationKey}
+            variants={{
+                hidden: { scale: 0, opacity: 0 },
+                visible: { scale: 1, opacity: 1 }
+            }}
+            initial='hidden'
+            animate={controls}
+            transition={{ duration: 0.5, ease: 'easeInOut' }}
+        >
+            {children}
+        </motion.div>
+    )
 }
 
 const Skills = () => {
@@ -41,56 +57,58 @@ const Skills = () => {
         <section id='skills' className='h-[100vh] pt-[3rem] md:pt-[4rem]'>
 
             <div className={`fixed top-0 left-0 mx-auto w-full h-[100vh] backdrop-blur-lg z-20 ${visibleSkill ? '' : 'hidden'}`}>
-                <motion.div
-                    className='flex justify-center items-center'>
-                    <div className={`${!isDarkMode ? 'bg-slate-200' : 'bg-slate-600' } relative w-[300px] h-[400px] md:w-[580px] md:h-[700px] lg:h-[590px] rounded-lg mt-[150px] md:mt-[250px] lg:mt-[100px] shadow-lg`}>
-                        <div onClick={() => setVisibleSkill(null)} className='absolute right-[-10px] top-[-25px] text-2xl md:text-4xl bg-red-500 p-3 md:p-7 rounded-lg text-white cursor-pointer'>X</div>
 
-                        {visibleSkill === 'Web Developer' && (
-                            <div className={`${!isDarkMode ? '' : 'text-white'}`}>
-                                <h2 className={`text-center my-3 font-medium text-2xl md:text-5xl md:pt-10 w-full ${!isDarkMode ? 'text-yellow-500' : 'text-blue-400'}`}>Deskripsi</h2>
-                                <p className='text-justify px-4 md:px-8 md:py-10 md:text-2xl'>Saya memulai perjalanan saya sebagai web developer sejak 2022. Saya belajar secara otodidak melalui youtube dan web course gratis.</p>
-                                <h2 className={`text-center my-3 font-medium text-2xl md:text-4xl w-full ${!isDarkMode ? 'text-yellow-500' : 'text-blue-400'}`}>Tools & tech stack</h2>
-                                <div className='grid grid-cols-3  mx-auto w-fit gap-3 md:gap-5'>
-                                    <img className='w-[50px] md:w-[100px] lg:w-[60px]' src={vsCode} />
-                                    <img className='w-[50px] md:w-[100px] lg:w-[60px]' src={html} />
-                                    <img className='w-[50px] md:w-[100px] lg:w-[60px]' src={css} />
-                                    <img className='w-[50px] md:w-[100px] lg:w-[60px]' src={js} />
-                                    <img className='w-[50px] md:w-[100px] lg:w-[60px]' src={react} />
-                                    <img className='w-[50px] md:w-[100px] lg:w-[60px]' src={tailwind} />
+                    <div className='flex justify-center items-center'>
+                <Animated>
+                        <div className={`${!isDarkMode ? 'bg-slate-200' : 'bg-slate-600'} relative w-[300px] h-[400px] md:w-[580px] md:h-[700px] lg:h-[590px] rounded-lg mt-[150px] md:mt-[250px] lg:mt-[100px] shadow-lg`}>
+                            <div onClick={() => setVisibleSkill(null)} className='absolute right-[-10px] top-[-25px] text-2xl md:text-4xl bg-red-500 p-3 md:p-7 rounded-lg text-white cursor-pointer'>X</div>
 
+                            {visibleSkill === 'Web Developer' && (
+                                <div className={`${!isDarkMode ? '' : 'text-white'}`}>
+                                    <h2 className={`text-center my-3 font-medium text-2xl md:text-5xl md:pt-10 w-full ${!isDarkMode ? 'text-yellow-500' : 'text-blue-400'}`}>Deskripsi</h2>
+                                    <p className='text-justify px-4 md:px-8 md:py-10 md:text-2xl'>Saya memulai perjalanan saya sebagai web developer sejak 2022. Saya belajar secara otodidak melalui youtube dan web course gratis.</p>
+                                    <h2 className={`text-center my-3 font-medium text-2xl md:text-4xl w-full ${!isDarkMode ? 'text-yellow-500' : 'text-blue-400'}`}>Tools & tech stack</h2>
+                                    <div className='grid grid-cols-3  mx-auto w-fit gap-3 md:gap-5'>
+                                        <img className='w-[50px] md:w-[100px] lg:w-[60px]' src={vsCode} />
+                                        <img className='w-[50px] md:w-[100px] lg:w-[60px]' src={html} />
+                                        <img className='w-[50px] md:w-[100px] lg:w-[60px]' src={css} />
+                                        <img className='w-[50px] md:w-[100px] lg:w-[60px]' src={js} />
+                                        <img className='w-[50px] md:w-[100px] lg:w-[60px]' src={react} />
+                                        <img className='w-[50px] md:w-[100px] lg:w-[60px]' src={tailwind} />
+
+                                    </div>
                                 </div>
-                            </div>
-                        )}
+                            )}
 
-                        {visibleSkill === 'Digital Artist' && (
-                            <div className={`${!isDarkMode ? '' : 'text-white'}`}>
-                                <h2 className={`text-center my-3 font-medium text-2xl md:text-5xl md:pt-10 w-full ${!isDarkMode ? 'text-yellow-500' : 'text-blue-400'}`}>Deskripsi</h2>
-                                <p className='text-justify px-4 md:px-8 md:py-10 md:text-2xl'>Menggambar merupakan salah 1 dari hobi saya, saya mulai belajar menggambar digital pada tahun 2020. Saya biasanya menggambar menggunakan pentab ataupun handphone.</p>
+                            {visibleSkill === 'Digital Artist' && (
+                                <div className={`${!isDarkMode ? '' : 'text-white'}`}>
+                                    <h2 className={`text-center my-3 font-medium text-2xl md:text-5xl md:pt-10 w-full ${!isDarkMode ? 'text-yellow-500' : 'text-blue-400'}`}>Deskripsi</h2>
+                                    <p className='text-justify px-4 md:px-8 md:py-10 md:text-2xl'>Menggambar merupakan salah 1 dari hobi saya, saya mulai belajar menggambar digital pada tahun 2020. Saya biasanya menggambar menggunakan pentab ataupun handphone.</p>
 
-                                <h2 className={`text-center my-3 font-medium text-2xl md:text-4xl w-full ${!isDarkMode ? 'text-yellow-500' : 'text-blue-400'}`}>Tools</h2>
+                                    <h2 className={`text-center my-3 font-medium text-2xl md:text-4xl w-full ${!isDarkMode ? 'text-yellow-500' : 'text-blue-400'}`}>Tools</h2>
 
-                                <div className='grid grid-cols-3 w-fit gap-3 md:mt-[3rem] lg:mt-[1rem] mx-auto'>
-                                    <img className='w-[50px] md:w-[100px]' src={sai} />
-                                    <img className='w-[50px] md:w-[100px]' src={huion} />
-                                    <img className='w-[50px] md:w-[100px]' src={ibis} />
+                                    <div className='grid grid-cols-3 w-fit gap-3 md:mt-[3rem] lg:mt-[1rem] mx-auto'>
+                                        <img className='w-[50px] md:w-[100px]' src={sai} />
+                                        <img className='w-[50px] md:w-[100px]' src={huion} />
+                                        <img className='w-[50px] md:w-[100px]' src={ibis} />
+                                    </div>
                                 </div>
-                            </div>
-                        )}
+                            )}
 
-                        {visibleSkill === 'Music Producer' && (
-                            <div className={`${!isDarkMode ? '' : 'text-white'}`}>
-                                <h2 className={`text-center my-3 font-medium text-2xl md:text-5xl md:pt-10 w-full ${!isDarkMode ? 'text-yellow-500' : 'text-blue-400'}`}>Deskripsi</h2>
-                                <p className='text-justify px-4 md:px-8 md:py-10 md:text-2xl'>Saya bukan hanya seseorang yang menikmati produk, tetapi juga seorang pengamat. Terpengaruh oleh musik EDM, saya mulai tertarik untuk membuat musik sendiri dengan gaya melodic sejak tahun 2023.</p>
+                            {visibleSkill === 'Music Producer' && (
+                                <div className={`${!isDarkMode ? '' : 'text-white'}`}>
+                                    <h2 className={`text-center my-3 font-medium text-2xl md:text-5xl md:pt-10 w-full ${!isDarkMode ? 'text-yellow-500' : 'text-blue-400'}`}>Deskripsi</h2>
+                                    <p className='text-justify px-4 md:px-8 md:py-10 md:text-2xl'>Saya bukan hanya seseorang yang menikmati produk, tetapi juga seorang pengamat. Terpengaruh oleh musik EDM, saya mulai tertarik untuk membuat musik sendiri dengan gaya melodic sejak tahun 2023.</p>
 
-                                <h2 className={`text-center my-3 font-medium text-2xl md:text-4xl w-full ${!isDarkMode ? 'text-yellow-500' : 'text-blue-400'}`}>Tools</h2>
-                                <div className='flex justify-center'>
-                                    <img className='w-[50px] md:w-[100px]' src={fl} />
+                                    <h2 className={`text-center my-3 font-medium text-2xl md:text-4xl w-full ${!isDarkMode ? 'text-yellow-500' : 'text-blue-400'}`}>Tools</h2>
+                                    <div className='flex justify-center'>
+                                        <img className='w-[50px] md:w-[100px]' src={fl} />
+                                    </div>
                                 </div>
-                            </div>
-                        )}
+                            )}
+                        </div>
+                </Animated>
                     </div>
-                </motion.div>
             </div>
 
             <div className={`${!isDarkMode ? '' : 'text-white'}`}>
@@ -107,7 +125,7 @@ const Skills = () => {
                     <div onClick={handleWebDeveloperClick} className={`${!isDarkMode ? 'bg-yellow-300' : 'text-white bg-blue-500'} text-center md:text-2xl rounded-lg w-fit mx-auto p-2 cursor-pointer shadow-md`}>See Skills</div>
                 </div>
 
-                <div  className={`${!isDarkMode ? 'bg-slate-100' : 'bg-slate-600'} w-[300px] h-[230px] md:w-[340px] md:h-[390px] shadow-lg mx-auto my-6 rounded-xl`}>
+                <div className={`${!isDarkMode ? 'bg-slate-100' : 'bg-slate-600'} w-[300px] h-[230px] md:w-[340px] md:h-[390px] shadow-lg mx-auto my-6 rounded-xl`}>
                     <div className='w-full h-[115px] md:h-[230px] rounded-t-xl'>
                         <img className='w-[5rem] md:w-[8rem] mx-auto pt-8 md:pt-14' src={pentab} alt="" />
                     </div>
