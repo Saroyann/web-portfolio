@@ -64,3 +64,13 @@ import portfolioLight from '../assets/navbar/light/portfolioLight.png'
 import certificateLight from '../assets/navbar/light/certificateLight.png'
 
 export {homeLight,aboutMeLight,skillsLight,portfolioLight,certificateLight}
+
+//dark mode
+
+import homeDark from '../assets/navbar/dark/homeDark.png'
+import aboutMeDark from '../assets/navbar/dark/aboutMeDark.png'
+import skillsDark from '../assets/navbar/dark/skillDark.png'
+import portfolioDark from '../assets/navbar/dark/portfolioDark.png'
+import certificateDark from '../assets/navbar/dark/certificateDark.png'
+
+export {homeDark,aboutMeDark,skillsDark,portfolioDark,certificateDark}

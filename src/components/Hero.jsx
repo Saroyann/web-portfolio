@@ -18,7 +18,7 @@ const Hero = () => {
                         initial={{opacity:0}}
                         animate={{opacity:1}}
                         transition={{duration:2, ease: 'easeInOut'}}
-                            className={`absolute ${!isDarkMode ? 'bg-yellow-200' : 'bg-blue-400' } w-[370px] h-[370px] md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px] rounded-full`}></motion.div>
+                            className={`absolute ${!isDarkMode ? 'bg-yellow-200 duration-500' : 'bg-blue-400 duration-500' } w-[370px] h-[370px] md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px] rounded-full`}></motion.div>
                         <motion.img
                             initial={{ x: '-100%', opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
