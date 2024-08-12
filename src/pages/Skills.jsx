@@ -25,8 +25,8 @@ function Animated({ children, animationKey }) {
             ref={ref}
             key={animationKey}
             variants={{
-                hidden: { scale: 0, opacity: 0 },
-                visible: { scale: 1, opacity: 1 }
+                hidden: { scale: 0 },
+                visible: { scale: 1 }
             }}
             initial='hidden'
             animate={controls}
@@ -58,8 +58,8 @@ const Skills = () => {
 
             <div className={`fixed top-0 left-0 mx-auto w-full h-[100vh] backdrop-blur-lg z-20 ${visibleSkill ? '' : 'hidden'}`}>
 
-                    <div className='flex justify-center items-center'>
                 <Animated>
+                    <div className='flex justify-center items-center'>
                         <div className={`${!isDarkMode ? 'bg-slate-200' : 'bg-slate-600'} relative w-[300px] h-[400px] md:w-[580px] md:h-[700px] lg:h-[590px] rounded-lg mt-[150px] md:mt-[250px] lg:mt-[100px] shadow-lg`}>
                             <div onClick={() => setVisibleSkill(null)} className='absolute right-[-10px] top-[-25px] text-2xl md:text-4xl bg-red-500 p-3 md:p-7 rounded-lg text-white cursor-pointer'>X</div>
 
@@ -107,8 +107,8 @@ const Skills = () => {
                                 </div>
                             )}
                         </div>
-                </Animated>
                     </div>
+                </Animated>
             </div>
 
             <div className={`${!isDarkMode ? '' : 'text-white'}`}>

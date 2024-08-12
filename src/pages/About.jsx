@@ -71,7 +71,7 @@ const About = () => {
                 <div className='w-[300px] md:w-[500px] lg:w-[1000px] lg:ml-[5rem] text-center mx-auto md:mt-9'>
                     <h2 className={`${!isDarkMode ? '' : 'text-white'} text-2xl md:text-4xl md:mb-2 font-medium`}>An Ordinary</h2>
                     <ReactTyped
-                        className={`${!isDarkMode ? '' : 'text-blue-400'} font-bold text-yellow-500 md:text-3xl`}
+                        className={`${!isDarkMode ? 'text-yellow-500' : 'text-blue-400'} font-bold md:text-3xl`}
                         strings={['Web Developer', 'Digital Artist', 'Music Producer']}
                         typeSpeed={80}
                         loop

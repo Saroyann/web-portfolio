@@ -91,7 +91,7 @@ const Navbar = () => {
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 3.5 }}
                     className="flex lg:justify-between items-center py-2 lg:w-[80rem]">
-                    <h1 className={`${!isDarkMode ? '' : 'text-blue-400'} text-2xl md:text-4xl ml-3 mt-2 font-bold text-yellow-500 mr-48 lg:mr-[0px]`}>YIIM</h1>
+                    <h1 className={`${!isDarkMode ? 'text-yellow-500' : 'text-blue-400'} text-2xl md:text-4xl ml-3 mt-2 font-bold mr-48 lg:mr-[0px]`}>YIIM</h1>
                     {
                         window.innerWidth < 1280 ?
                             ''
