@@ -29,11 +29,11 @@ import scrollDown from '../assets/scroll down.png'
 export {hero,izumi1,izumi2,scrollDown}
 
 //page about
-import about1 from '../assets/about.jpeg';
-import about2 from '../assets/about 2.jpeg';
-import about3 from '../assets/about 3.jpeg';
-import about4 from '../assets/about 4.jpeg';
-import about5 from '../assets/about 5.jpeg';
+import about1 from '../assets/about/about.jpeg';
+import about2 from '../assets/about/about 2.jpeg';
+import about3 from '../assets/about/about 3.jpeg';
+import about4 from '../assets/about/about 4.jpeg';
+import about5 from '../assets/about/about 5.jpeg';
 
 export {about1,about2,about3,about4,about5}
 
