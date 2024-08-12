@@ -35,40 +35,60 @@ const Navbar = () => {
     return (
         <>
             <motion.div
-            initial={{x: '-100%', opacity: 0}}
-            animate={{x: 0, opacity: 1}}
-            transition={{duration: 2}}
-            duration={{}}
+                initial={{ x: '-100%', opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 2 }}
+                duration={{}}
                 className='fixed left-5 hidden lg:block w-[5rem]'>
                 <div className='mt-28 bg-slate-200 p-4 rounded-full'>
-                    <a href="#home">
+                    <motion.a
+                        initial={{ x: '-100%', opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ transition: 2, delay: 1 }}
+                        href="#home">
                         <img className='mt-5 hover:scale-75 duration-300' src={homeLight} />
-                    </a>
+                    </motion.a>
 
-                    <a href="#about">
+                    <motion.a
+                        initial={{ x: '-100%', opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ transition: 2, delay: 1.5 }}
+                        href="#about">
                         <img className=' my-10 hover:scale-75 duration-300' src={aboutMeLight} />
-                    </a>
+                    </motion.a>
 
-                    <a href="#skills">
+                    <motion.a
+                        initial={{ x: '-100%', opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ transition: 2, delay: 2 }}
+                        href="#skills">
                         <img className=' my-10 hover:scale-75 duration-300' src={skillsLight} />
-                    </a>
+                    </motion.a>
 
-                    <a href="#portfolio">
+                    <motion.a
+                        initial={{ x: '-100%', opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ transition: 2, delay: 2.5 }}
+                        href="#portfolio">
                         <img className=' my-10 hover:scale-75 duration-300' src={portfolioLight} />
-                    </a>
+                    </motion.a>
 
-                    <a href="#Achievements">
+                    <motion.a
+                        initial={{ x: '-100%', opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ transition: 2, delay: 3 }}
+                        href="#Achievements">
                         <img className=' my-10 hover:scale-75 duration-300' src={certificateLight} />
-                    </a>
+                    </motion.a>
                 </div>
             </motion.div>
 
             <div className={navClasses}>
                 <motion.div
-                initial={{y: '-100%', opacity: 0}}
-                animate={{y: 0, opacity: 1}}
-                transition={{duration:2}}
-                className="flex lg:justify-between items-center py-2 lg:w-[80rem]">
+                    initial={{ y: '-100%', opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 3.5 }}
+                    className="flex lg:justify-between items-center py-2 lg:w-[80rem]">
                     <h1 className=" text-2xl md:text-4xl ml-3 mt-2 font-bold text-yellow-500 mr-48 lg:mr-[0px]">YIIM</h1>
                     {
                         window.innerWidth < 1280 ?

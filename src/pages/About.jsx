@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ReactTyped } from 'react-typed';
-import { motion } from 'framer-motion';
+import { motion} from 'framer-motion';
 import {about1,about2,about3,about4,about5} from '../assets/index.js'
 import { FaCodepen, FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 

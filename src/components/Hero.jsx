@@ -10,11 +10,15 @@ const Hero = () => {
             <div className={`${window.innerWidth <= 1280 ? 'overflow-hidden' : ''} lg:flex lg:justify-between lg:items-center lg:flex-row-reverse lg:h-[100vh]`}>
                 <div className="pt-20 mx-auto flex flex-col justify-center items-center">
                     <div className='relative flex items-center justify-center w-[480px] md:w-[600px]'>
-                        <div className="absolute bg-yellow-200 w-[370px] h-[370px] md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px] rounded-full"></div>
+                        <motion.div
+                        initial={{opacity:0}}
+                        animate={{opacity:1}}
+                        transition={{duration:2, ease: 'easeInOut'}}
+                            className="absolute bg-yellow-200 w-[370px] h-[370px] md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px] rounded-full"></motion.div>
                         <motion.img
                             initial={{ x: '-100%', opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
-                            transition={{ duration: 2 }}
+                            transition={{ duration: 2, type: 'spring', stiffness: 100, damping:5, mass: 1 }}
                             className="absolute left-[50px] w-[170px] md:left-[-70px] md:w-[360px]"
                             src={izumi1}
                             alt="Izumi 1"
@@ -22,19 +26,26 @@ const Hero = () => {
                         <motion.img
                             initial={{ x: '100%', opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
-                            transition={{ duration: 2 }}
+                            transition={{ duration: 2, type: 'spring', stiffness: 100, damping:5, mass: 1 }}
                             className="absolute right-[50px] w-[170px]  md:right-[-70px] md:w-[360px]"
                             src={izumi2}
                             alt="Izumi 2"
                         />
-                        <img
+                        <motion.img
+                            initial={{ scale: 0, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            transition={{ duration: 2, type: 'tween' }}
                             className="relative w-[330px] md:w-[700px]"
                             src={hero}
                             alt="Profile"
                         />
                     </div>
                 </div>
-                <div className='text-center w-[280px] md:w-[500px] lg:w-[550px] mx-auto mt-3 lg:mt-40'>
+                <motion.div
+                initial={{opacity:0}}
+                animate={{opacity:1}}
+                transition={{duration:2}}
+                className='text-center w-[280px] md:w-[500px] lg:w-[550px] mx-auto mt-3 lg:mt-40'>
                     <h2 className='text-2xl md:text-3xl lg:text-4xl font-medium'>Hello I'm</h2>
                     <h1 className='text-3xl md:text-5xl font-bold py-2 md:py-5 lg:py-7 lg:text-6xl'>William Saroyan (YIIM)</h1>
                     <div className='flex justify-center md:text-3xl'>
@@ -57,7 +68,7 @@ const Hero = () => {
                         }}
 
                         className='w-[70px] md:w-[100px] mt-5 mx-auto' src={scrollDown} alt="" />
-                </div>
+                </motion.div>
             </div>
         </div>
     );

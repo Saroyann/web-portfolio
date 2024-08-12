@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {vsCode,html,css,js,react,tailwind,webdev,pentab,music,fl,huion,sai,ibis} from '../assets/index.js'
+import { motion } from 'framer-motion';
 
 const Skills = () => {
     const [visibleSkill, setVisibleSkill] = useState(null);
@@ -20,7 +21,8 @@ const Skills = () => {
         <section id='skills' className='h-[100vh] pt-[3rem] md:pt-[4rem]'>
 
             <div className={`fixed top-0 left-0 mx-auto w-full h-[100vh] backdrop-blur-lg z-20 ${visibleSkill ? '' : 'hidden'}`}>
-                <div className='flex justify-center items-center'>
+                <motion.div
+                className='flex justify-center items-center'>
                     <div className='relative w-[300px] h-[400px] md:w-[580px] md:h-[700px] lg:h-[590px] rounded-lg bg-slate-200 mt-[150px] md:mt-[250px] lg:mt-[100px] shadow-lg'>
                         <div onClick={() => setVisibleSkill(null)} className='absolute right-[-10px] top-[-25px] text-2xl md:text-4xl bg-red-500 p-3 md:p-7 rounded-lg text-white cursor-pointer'>X</div>
 
@@ -68,7 +70,7 @@ const Skills = () => {
                             </div>
                         )}
                     </div>
-                </div>
+                </motion.div>
             </div>
 
             <h1 className='text-3xl md:text-6xl font-bold py-2 md:py-5 text-center'>My Skills</h1>
