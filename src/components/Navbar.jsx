@@ -3,10 +3,12 @@ import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import ToggleButton from './ToggleButton';
 import { motion } from 'framer-motion';
 import { homeLight, aboutMeLight, skillsLight, portfolioLight, certificateLight } from '../assets/index.js'
+import { useTheme } from '../assets/ThemeContext.jsx';
 
 const Navbar = () => {
     const [menu, setMenu] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+    const { isDarkMode } = useTheme();
 
     const handleMenu = () => {
         setMenu(prevMenu => !prevMenu);
@@ -89,7 +91,7 @@ const Navbar = () => {
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 3.5 }}
                     className="flex lg:justify-between items-center py-2 lg:w-[80rem]">
-                    <h1 className=" text-2xl md:text-4xl ml-3 mt-2 font-bold text-yellow-500 mr-48 lg:mr-[0px]">YIIM</h1>
+                    <h1 className={`${!isDarkMode ? '' : 'text-blue-400'} text-2xl md:text-4xl ml-3 mt-2 font-bold text-yellow-500 mr-48 lg:mr-[0px]`}>YIIM</h1>
                     {
                         window.innerWidth < 1280 ?
                             ''

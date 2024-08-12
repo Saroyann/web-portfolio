@@ -3,7 +3,7 @@ import { ReactTyped } from 'react-typed';
 import { motion, useAnimation } from 'framer-motion';
 import { about1, about2, about3, about4, about5 } from '../assets/index.js'
 import { FaCodepen, FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import { useInView } from 'react-intersection-observer';
+import { useTheme } from '../assets/ThemeContext.jsx';
 
 const photos = [
     about1,
@@ -15,6 +15,7 @@ const photos = [
 
 const About = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const { isDarkMode } = useTheme();
 
     const nextSlide = () => {
         setCurrentIndex((prevIndex) =>
@@ -32,13 +33,13 @@ const About = () => {
         <section className='h-[100vh] pt-[3rem] mb-[4rem] md:pt-[5rem] lg:pt-[3rem]' id='about'>
             <div
                 className='text-center'>
-                <h1 className='text-3xl md:text-6xl font-bold py-2 md:py-5'>About Me</h1>
+                <h1 className={`${!isDarkMode ? '' : 'text-white'} text-3xl md:text-6xl font-bold py-2 md:py-5`}>About Me</h1>
             </div>
 
             <div className='mx-auto lg:flex lg:items-center lg:justify-between lg:w-[1000px]'>
                 <div className='relative py-5 overflow-hidden lg:overflow-visible w-[100%] flex items-center justify-center'>
                     <button
-                        className='absolute left-0 lg:left-[-50px] z-10 text-3xl md:text-5xl p-2'
+                        className={`${!isDarkMode ? '' : 'text-white'} absolute left-0 lg:left-[-50px] z-10 text-3xl md:text-5xl p-2`}
                         onClick={prevSlide}
                     >
                         &lt;
@@ -60,7 +61,7 @@ const About = () => {
                     </motion.div>
 
                     <button
-                        className='absolute right-0 lg:right-[-50px] z-10 text-3xl md:text-5xl p-2'
+                        className={`${!isDarkMode ? '' : 'text-white'} absolute right-0 lg:right-[-50px] z-10 text-3xl md:text-5xl p-2`}
                         onClick={nextSlide}
                     >
                         &gt;
@@ -68,15 +69,15 @@ const About = () => {
                 </div>
 
                 <div className='w-[300px] md:w-[500px] lg:w-[1000px] lg:ml-[5rem] text-center mx-auto md:mt-9'>
-                    <h2 className='text-2xl md:text-4xl md:mb-2 font-medium'>An Ordinary</h2>
+                    <h2 className={`${!isDarkMode ? '' : 'text-white'} text-2xl md:text-4xl md:mb-2 font-medium`}>An Ordinary</h2>
                     <ReactTyped
-                        className='font-bold text-yellow-500 md:text-3xl'
+                        className={`${!isDarkMode ? '' : 'text-blue-400'} font-bold text-yellow-500 md:text-3xl`}
                         strings={['Web Developer', 'Digital Artist', 'Music Producer']}
                         typeSpeed={80}
                         loop
                     />
 
-                    <p className='pt-3 text-justify md:text-2xl'>
+                    <p className={`${!isDarkMode ? '' : 'text-white'} pt-3 text-justify md:text-2xl`}>
                         Saya adalah seorang Web Developer (Frontend) yang saat ini sedang menempuh pendidikan di STMIK Wicida, jurusan Teknik Informatika. Selain pengembangan web, saya juga memiliki minat yang besar di bidang desain grafis sebagai Digital Artist dan di bidang musik sebagai Music Producer.
                     </p>
 
@@ -86,11 +87,13 @@ const About = () => {
                             const iconSize = window.innerWidth < 768 ? 40 : 60;
                             return (
                                 <>
+                                <div className={`${!isDarkMode ? '' : 'text-white'} flex items-center w-full justify-between`}>
                                     <a href="https://github.com/Saroyann" target='_blank'><FaGithub size={iconSize} /></a>
                                     <a href='https://codepen.io/Saroyann' target='_blank'><FaCodepen size={iconSize} /></a>
                                     <a href='https://www.linkedin.com/in/william-saroyan-46678327b/' target='_blank'><FaLinkedin size={iconSize} /></a>
                                     <a href='https://www.instagram.com/saroyan_yan030/' target='_blank'><FaInstagram size={iconSize} /></a>
                                     <a href='https://web.facebook.com/profile.php?id=100068010153458' target='_blank'><FaFacebook size={iconSize} /></a>
+                                </div>
                                 </>
                             );
                         })()}

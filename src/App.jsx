@@ -6,6 +6,7 @@ import Portfolio from './pages/Portfolio'
 import Certificates from './pages/Certificates'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import { useTheme } from './assets/ThemeContext'
 
 function AnimatedSection({ children }) {
   const [ref, inView] = useInView({
@@ -37,9 +38,11 @@ function AnimatedSection({ children }) {
 }
 
 function App() {
+  const { isDarkMode } = useTheme();
   return (
     <>
-      <div className='max-w-[480px] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1280px] mx-auto'>
+    <div className={`${!isDarkMode ? '' : 'bg-slate-800'}`}>
+      <div className={`max-w-[480px] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1280px] mx-auto`}>
         <Home />
         <AnimatedSection>
           <About />
@@ -54,6 +57,7 @@ function App() {
           <Certificates />
         </AnimatedSection>
       </div>
+    </div>
     </>
   )
 }

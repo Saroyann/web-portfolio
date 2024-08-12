@@ -18,7 +18,7 @@ const Hero = () => {
                         initial={{opacity:0}}
                         animate={{opacity:1}}
                         transition={{duration:2, ease: 'easeInOut'}}
-                            className="absolute bg-yellow-200 w-[370px] h-[370px] md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px] rounded-full"></motion.div>
+                            className={`absolute ${!isDarkMode ? 'bg-yellow-200' : 'bg-blue-400' } w-[370px] h-[370px] md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px] rounded-full`}></motion.div>
                         <motion.img
                             initial={{ x: '-100%', opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
@@ -50,12 +50,12 @@ const Hero = () => {
                 animate={{opacity:1}}
                 transition={{duration:2}}
                 className='text-center w-[280px] md:w-[500px] lg:w-[550px] mx-auto mt-3 lg:mt-40'>
-                    <h2 className='text-2xl md:text-3xl lg:text-4xl font-medium'>Hello I'm</h2>
-                    <h1 className='text-3xl md:text-5xl font-bold py-2 md:py-5 lg:py-7 lg:text-6xl'>William Saroyan (YIIM)</h1>
+                    <h2 className={`text-2xl md:text-3xl lg:text-4xl font-medium ${!isDarkMode ? '' : 'text-white'}`}>Hello I'm</h2>
+                    <h1 className={`text-3xl md:text-5xl font-bold py-2 md:py-5 lg:py-7 lg:text-6xl ${!isDarkMode ? '' : 'text-white'}`}>William Saroyan (YIIM)</h1>
                     <div className='flex justify-center md:text-3xl'>
-                        <p className='pr-1 lg:pr-3 lg:pb-10'>Seorang </p>
+                        <p className={`pr-1 lg:pr-3 lg:pb-10 ${!isDarkMode ? '' : 'text-white'}`}>Seorang </p>
                         <ReactTyped
-                            className='font-bold text-yellow-500'
+                            className={`font-bold ${!isDarkMode ? 'text-yellow-500' : 'text-blue-400'}`}
                             strings={['Web Developer', 'Digital Artist', 'Music Producer']}
                             typeSpeed={80}
                             loop
