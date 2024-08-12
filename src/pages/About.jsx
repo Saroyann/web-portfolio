@@ -81,7 +81,7 @@ const About = () => {
                         Saya adalah seorang Web Developer (Frontend) yang saat ini sedang menempuh pendidikan di STMIK Wicida, jurusan Teknik Informatika. Selain pengembangan web, saya juga memiliki minat yang besar di bidang desain grafis sebagai Digital Artist dan di bidang musik sebagai Music Producer.
                     </p>
 
-                    <h2 className='text-2xl md:text-4xl my-3 md:my-5 font-medium'>Find Me On :</h2>
+                    <h2 className={`${!isDarkMode ? '' : 'text-white'} text-2xl md:text-4xl my-3 md:my-5 font-medium`}>Find Me On :</h2>
                     <div className='flex justify-around pb-5'>
                         {(() => {
                             const iconSize = window.innerWidth < 768 ? 40 : 60;
