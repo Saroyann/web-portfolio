@@ -2,8 +2,12 @@ import React from 'react';
 import { hero, izumi1, izumi2, scrollDown } from '../assets/index.js'
 import { ReactTyped } from 'react-typed';
 import { motion } from 'framer-motion';
+import { useTheme } from '../assets/ThemeContext.jsx';
 
 const Hero = () => {
+
+    const { isDarkMode } = useTheme();
+
     return (
         <div className='h-[100vh] mx-auto'>
 
