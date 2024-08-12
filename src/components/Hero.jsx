@@ -1,5 +1,5 @@
 import React from 'react';
-import { hero, izumi1, izumi2, scrollDown } from '../assets/index.js'
+import { hero, izumi1, izumi2, scrollDown,scrollDownDark } from '../assets/index.js'
 import { ReactTyped } from 'react-typed';
 import { motion } from 'framer-motion';
 import { useTheme } from '../assets/ThemeContext.jsx';
@@ -71,7 +71,7 @@ const Hero = () => {
                             repeatType: "loop"
                         }}
 
-                        className='w-[70px] md:w-[100px] mt-5 mx-auto' src={scrollDown} alt="" />
+                        className='w-[70px] md:w-[100px] mt-5 mx-auto' src={!isDarkMode ? scrollDown : scrollDownDark} />
                 </motion.div>
             </div>
         </div>

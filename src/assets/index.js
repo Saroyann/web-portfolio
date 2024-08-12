@@ -25,8 +25,9 @@ import hero from '../assets/profile.png';
 import izumi1 from '../assets/konata home.png';
 import izumi2 from '../assets/konata home 2.png';
 import scrollDown from '../assets/scroll down.png'
+import scrollDownDark from '../assets/scroll downDark.png'
 
-export {hero,izumi1,izumi2,scrollDown}
+export {hero,izumi1,izumi2,scrollDown,scrollDownDark}
 
 //page about
 import about1 from '../assets/about/about.jpeg';
