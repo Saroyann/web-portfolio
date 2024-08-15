@@ -1,4 +1,4 @@
-<center><h1>My Web Portfolio</h1></center>
+<h1 style="text-align: center">My Web Portfolio</h1>
 
 # React + Vite
 
