@@ -1,4 +1,7 @@
 <h1  align="center">My Web Portfolio</h1>
+<div align=""center>
+<img src="https://github.com/Saroyann/web-portfolio/blob/master/src/assets/markdown/NewCanvas1.png?raw=true">
+</div>
 
 # React + Vite
 
